@@ -1,48 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="topbar">
+        <div class="grid-990 topbar-wrap fn-clear">
+            @Html.Partial("_TopMenuPartial")
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
-
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+    </div>
+    <header class="header">
+        <div class="grid-990 header-wrap fn-clear">
+            <figure id="alipay-img-logo" class="fn-left">
+                @Html.ActionLink("LOGO", "Index", "Home")
+            </figure>
+            <nav id="J-nav" role="navigation">
+                <ul class="nav">
+                    <li class="nav-item">@Html.ActionLink("首页", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-item-link custom-nav-item" })</li>
+                    <li class="nav-item">@Html.ActionLink("关于", "Index", "About", routeValues: null, htmlAttributes: new { @class = "nav-item-link  custom-nav-item" })</li>
+                    <li class="nav-item">@Html.ActionLink("联系我们", "Index", "Contact", routeValues: null, htmlAttributes: new { @class = "nav-item-link  custom-nav-item" })</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    @RenderSection("featured", required: false)
+    <section class="main">
+        @RenderBody()
+    </section>
+    <footer class="footer">
+        <div class="footer-line">
+            <div class="grid-990 cnt"></div>
+        </div>
+        <div class="grid-990 sitelink fn-clear">
+            <p>&copy; @DateTime.Now.Year - Shouxin Server</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
 </html>
