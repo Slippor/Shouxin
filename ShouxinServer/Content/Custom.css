@@ -1,0 +1,31 @@
+﻿.header
+{
+    height: 80px;
+}
+
+.txt-1
+{
+    height: 129px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.slide-number
+{
+    margin-left: -45px;
+}
+
+.about-item .ui-link-item a
+{
+    color: #666;
+}
+
+.custom-nav-item
+{
+    font-size: 20px;
+    width: 90px;
+    margin-right: 20px;
+}

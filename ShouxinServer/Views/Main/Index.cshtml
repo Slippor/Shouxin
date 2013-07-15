@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Main/_Layouts.cshtml";
+}
+
+<div id="Account">
+    <img alt="" src="https://i.alipayobjects.com/e/201302/2IjtdQW3jR.gif" />
+    <label>@User.Identity.Name</label>
+</div>
+<div id="Balance">
+    <label>账户余额</label>
+    <ul>
+        <li>@Html.ActionLink("充值", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("提现", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+</div>

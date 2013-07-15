@@ -1,0 +1,16 @@
+﻿<div class="content-wrapper">
+    <div id="menu">
+        @Html.Partial("_MenuPartial")
+    </div>
+</div>
+<div class="content-wrapper">
+    <div id="submenu">
+        @RenderSection("SubMenu", required: false)
+    </div>
+</div>
+<div>
+    <section class="content-wrapper main-content clear-fix">
+        @RenderBody()
+    </section>
+</div>
+

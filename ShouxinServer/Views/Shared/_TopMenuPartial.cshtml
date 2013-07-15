@@ -1,0 +1,47 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <ul class="topmenu">
+        <li class="topmenu-item topmenu-item-first">你好, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
+        </li>
+        <li>
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+            {
+                @Html.AntiForgeryToken()
+                <a href="javascript:document.getElementById('logoutForm').submit()">退出</a>
+            }
+        </li>
+        <li>
+            <select id="MyShouxin" style="display: inline">
+                <option selected="selected">我的手信</option>
+            </select>
+        </li>
+        <li>消息 0
+        </li>
+        <li>安全中心
+        </li>
+        <li>
+            <select id="HelpCenter" style="display: inline">
+                <option selected="selected">帮助中心</option>
+            </select>
+        </li>
+        <li>提建议
+        </li>
+    </ul>
+    
+}
+else
+{
+    <ul class="topmenu">
+        <li class="topmenu-item topmenu-item-first">@Html.ActionLink("注册", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li class="topmenu-item topmenu-item-first">@Html.ActionLink("登录", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li class="topmenu-item topmenu-item-dropdown" id="J-topmenu-dropdown">
+            @Html.ActionLink("我的手信", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", target = "_blank" })<i class="icon-dropdown"></i>
+            <ul class="ui-list">
+                <li class="ui-list-item"><a href="#" target="_blank">充值</a></li>
+                <li class="ui-list-item"><a href="#" target="_blank">交易记录</a></li>
+                <li class="ui-list-item"><a href="#" target="_blank">转账</a></li>
+            </ul>
+        </li>
+        <li class="topmenu-item topmenu-item-last"><a href="#" target="_blank" title="帮助中心">帮助中心</a></li>
+    </ul>
+}
