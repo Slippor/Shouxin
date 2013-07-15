@@ -29,10 +29,10 @@ namespace ShouxinServer.Tests.Controllers
         public void About()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            AboutController controller = new AboutController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Index() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
@@ -42,10 +42,10 @@ namespace ShouxinServer.Tests.Controllers
         public void Contact()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            ContactController controller = new ContactController();
 
             // Act
-            ViewResult result = controller.Contact() as ViewResult;
+            ViewResult result = controller.Index() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
