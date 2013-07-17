@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ShouxinServer.Controllers
 {
-    public class AboutController : Controller
+    public class AboutController : BaseController
     {
         //
         // GET: /Abount/
@@ -14,7 +14,7 @@ namespace ShouxinServer.Controllers
         {
             ViewBag.Message = "";
 
-            return View();
+            return View(GetViewModel());
         }
     }
 }

@@ -1,0 +1,217 @@
+﻿/* 两个选框 */
+.tab-choose
+{
+    width: 778px;
+    height: 67px;
+    box-shadow: 0 0 3px #C7C5C5;
+}
+
+.tab-choose-item
+{
+    float: left;
+}
+
+    .btn-personal, .tab-choose-item a, .tab-choose-item-personal .arrow, .ui-dropdown-trigger
+    {
+        background-image: url("https://i.alipayobjects.com/e/201209/1DY4fMlnIi.png");
+        background-repeat: no-repeat;
+    }
+
+    .tab-choose-item a
+    {
+        display: block;
+        height: 68px;
+        text-indent: -9999em;
+    }
+
+.tab-choose-item-personal
+{
+    position: relative;
+}
+
+    .tab-choose-item-personal a
+    {
+        background-position: 0 0;
+        width: 388px;
+    }
+
+    .tab-choose-item-personal .arrow
+    {
+        display: block;
+        width: 25px;
+        height: 11px;
+        background-position: 0 -71px;
+        position: absolute;
+        top: 67px;
+        left: 47%;
+    }
+
+.tab-choose-item-business a
+{
+    background-position: -386px 0;
+    width: 390px;
+}
+
+.box-shadow
+{
+    box-shadow: 0 0 5px #c7c5c5;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+    width: 776px;
+}
+/* 表单重设 */
+.ui-form-general .ui-form-item
+{
+    /**padding-left:140px;**/
+}
+
+.ui-form-general
+{
+    padding-top: 50px;
+}
+
+    .ui-form-general .ui-label
+    {
+        width: 140px;
+        margin-left: -140px;
+    }
+
+.login-form-cnt
+{
+    width: 418px;
+    background: #fff;
+    padding: 15px 200px 0 160px;
+}
+
+.license
+{
+    margin-left: 60px;
+    float: left;
+    vertical-align: middle;
+}
+
+.ime-disabled
+{
+    ime-mode: disabled;
+}
+
+.checkcode-img
+{
+    border: 1px solid #C1C1C1;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.ui-form-item
+{
+    position: relative;
+    zoom: 1;
+}
+
+    .ui-form-item .ui-input
+    {
+        margin-right: 6px;
+    }
+
+.ui-form-item-checkcode-error .ui-form-explain
+{
+    background-color: #fff;
+    border: none;
+    background-position: -59px -66px;
+    padding: 10px 8px 9px 25px;
+    position: absolute;
+    top: 0;
+}
+
+    .ui-form-item-checkcode-error .ui-form-explain .ui-form-arrow
+    {
+        display: none;
+    }
+
+.ui-form-item-checkcode-error .ui-input
+{
+    border: 1px solid #FF0000;
+}
+
+.reg-area
+{
+    /**text-align: right;del by lin.weng**/
+}
+
+.ui-form-l .ui-form-item-area
+{
+    padding-bottom: 27px;
+    _padding-bottom: 20px;
+}
+
+.ui-form-item-area .ui-label-area
+{
+    padding-top: 8px;
+}
+
+.ui-form input::-webkit-input-placeholder
+{
+    color: #999;
+}
+
+.ui-form input:-moz-placeholder
+{
+    color: #999;
+}
+
+/* 阿里账户 */
+.aliusers-list li
+{
+    float: left;
+    margin: 10px 8px 0 auto;
+    white-space: nowrap;
+}
+
+.ui-ali-icons
+{
+    background-image: url("https://i.alipayobjects.com/e/201208/3ocQFumQPT.png");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: text-top;
+    overflow: hidden;
+}
+
+.ui-ali-icons-1
+{
+    background-position: 0 -99px;
+}
+
+.ui-ali-icons-3, .ui-ali-icons-4
+{
+    background-position: 0 -40px;
+}
+
+.ui-ali-icons-15
+{
+    background-position: 0 -40px;
+}
+
+.ui-ali-icons-5
+{
+    background-position: 0 -80px;
+}
+
+.ui-ali-icons-0
+{
+    background-position: 0 0;
+}
+
+.ui-ali-icons-2
+{
+    background-position: 0 -60px;
+}
+/***select重新设置***/
+.ui-form-item-area .ui-littleselect-trigger
+{
+    border: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+}

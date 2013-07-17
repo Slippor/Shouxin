@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ShouxinServer.Controllers
 {
-    public class ContactController : Controller
+    public class ContactController : BaseController
     {
         //
         // GET: /Contact/
@@ -15,7 +15,7 @@ namespace ShouxinServer.Controllers
         {
             ViewBag.Message = "";
 
-            return View();
+            return View(GetViewModel());
         }
     }
 }

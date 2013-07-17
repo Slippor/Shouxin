@@ -1,0 +1,220 @@
+.the-alipay-global{font:normal 12px/1.5 Verdana,Arial,\5b8b\4f53,sans-serif}
+.the-alipay-global *{margin:0;padding:0;font-style:normal;font-weight:normal;font-size:100%}
+.the-alipay-global ol,.the-alipay-global ul{list-style:none}
+.the-alipay-global a{text-decoration:none;color:#08C}
+.the-alipay-global .sl-alpha{padding:0 2px 2px;border-top:2px solid #e0e0e0;background:rgba(0,0,0,0.1);filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#1b000000',EndColorStr='#1b000000')}
+:root .the-alipay-global .sl-alpha{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#1b000000',EndColorStr='#1b000000')}
+.the-alipay-global .fn-clear{zoom:1}
+.the-alipay-global .fn-clear:after{visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0}
+.the-alipay-global .fn-hide{display:none}
+.the-alipay-global .global-hide{display:none}
+#global-header-area{padding:7px 0}
+#global-header-nav{margin-bottom:15px}
+#global-topLink{float:right;height:38px}
+.global-logo{float:left;padding-top:7px}
+.global-logo a{display:block;width:100px;height:38px;background:transparent url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) -60px -1676px no-repeat}
+.global-logo a span{display:none}
+.global-link{float:left;height:43px;line-height:48px}
+.global-link .global-link-hasflash{vertical-align:12px}
+#global-header-area .link{float:left;padding:18px 0 0 0}
+.global-loading{height:50px;background:url('https://i.alipayobjects.com/e/201205/2bW1qj1jon.gif') center no-repeat transparent}
+.global-separator{font-weight:normal;color:#ccc}
+.global-separator-pd{color:#ccc;padding:0 5px}
+.global-separator{font-weight:normal}
+.global-nav,.global-nav-cnt,.global-nav-cnt ul,.global-nav-master-current .global-nav-master-a,.global-nav-master-current strong,.global-nav-master-a:hover,.global-nav-master-a:hover strong,.global-subnav-current a,.global-subnav-current span,.global-subnav a:hover,.global-subnav a:hover span,.global-nav-master-current em,.global-nav-master-current a.global-nav-master-a:hover{background:transparent url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) no-repeat}
+.global-nav{overflow:hidden;position:relative;background-position:0 -160px;background-repeat:repeat-x}
+.global-nav-nosub{height:42px}
+.global-nav a:hover{text-decoration:none;cursor:pointer}
+.global-nav-cnt{height:80px;padding-left:10px}
+.global-nav-cnt ul{background-position:right -80px;overflow:hidden;height:100%}
+.global-nav-master,.global-nav-master-other{float:left;display:inline;margin:7px 5px 0 0}
+.global-nav-master-other{margin-right:0}
+a.global-nav-master-a{float:left;font-size:14px;text-align:center;color:#FFF}
+a.global-nav-master-a strong{padding:8px 15px 13px;font-size:14px;height:14px;line-height:14px;float:left;font-weight:bold}
+a.global-nav-master-a:hover strong{background-position:right -345px}
+.global-nav-master-current a.global-nav-master-a{color:#696969;background-position:0 -240px!important}
+.global-nav-master-current a.global-nav-master-a:hover,.global-nav-master-current a.global-nav-master-a:active{color:#696969}
+.global-nav-master-current strong{background-position:right -275px!important}
+.global-nav-master-other em{padding:8px 0 13px;color:#fef9f3;font-size:14px;height:14px;line-height:14px;float:left;font-weight:normal}
+.global-nav-master-current em{color:#696969;font-weight:bold;padding:8px 15px 13px;background-position:right -275px!important}
+.global-nav-master-other a.global-nav-master-a{margin-right:10px}
+.global-nav-master-other a.global-nav-master-a:hover{background:0}
+.global-nav-master-current a.global-nav-master-a:hover{background-position:0 -240px}
+.global-nav-master-other a.global-nav-master-a:hover em{text-decoration:underline}
+a.global-nav-master-a:hover,.global-nav-master-a:active{background-position:0 -310px;color:#fff}
+ul.global-subnav,p.global-subnav{display:none;position:absolute;top:46px;left:10px;background:0}
+p.global-subnav{padding:7px 15px}
+p.global-subnav .global-subnav-title{margin-right:10px;font-weight:bold;color:#808080}
+p.global-subnav a{color:#08c;margin:0 2px}
+p.global-subnav a:hover{text-decoration:underline;background:0;color:#08c}
+ul.global-subnav li{float:left;display:inline;margin-right:10px}
+ul.global-subnav a{float:left;color:#868686;text-align:center}
+ul.global-subnav span{padding:0 15px;height:28px;line-height:28px;*line-height:32px;line-height:32px\0;overflow:hidden;float:left}
+.global-nav-master-current .global-subnav{display:block}
+.global-subnav a:hover{color:#868686;background-position:0 -435px}
+.global-subnav a:hover span{background-position:right -463px}
+.global-subnav .global-subnav-current a{background-position:0 -379px!important}
+.global-subnav .global-subnav-current a span{background-position:right -407px!important}
+.global-nav-separator{color:#f9d3ae;font-size:14px;line-height:14px;font-weight:bold;float:left;margin:14px 5px 0 0;*margin:13px 5px 0 0;margin:13px 5px 0 0\0}
+.global-nav-separator-dashed{text-indent:-9999px;height:12px;float:left;border-left:2px dotted #fdf2e7;margin:16px 15px 0 0;*margin:15px 15px 0 0;margin:15px 15px 0 0\0;overflow:hidden}
+.global-toplink{float:right}
+.global-toplink .global-dropdown{height:28px}
+.global-toplink .global-toplink-link{display:inline-block;padding:0 6px;color:#666}
+.global-toplink a:hover{color:#666;text-decoration:underline}
+.global-toplink .global-toplink-user{padding:0}
+.global-toplink-user,.global-toplink-more{text-decoration:none!important}
+.global-toplink .global-toplink-i,.global-toplink .global-toplink-username,.global-toplink .global-toplink-more{padding-right:15px;background:url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) no-repeat right -1749px;height:16px}
+.global-toplink .global-toplink-username{background-color:#FFF}
+.global-toplink .global-toplink-more{padding:0 15px 0 0;background-position:right -1657pxpx\9}
+.global-toplink a.global-toplink-msg{padding:1px 6px;-moz-border-radius:2px 2px;-webkit-border-radius:2px 2px;-o-border-radius:2px 2px;border-radius:2px 2px;background:#d9d9d9;color:#484848;line-height:16px;vertical-align:middle}
+@-moz-document url-prefix(){.global-toplink .global-toplink-i,.global-toplink .global-toplink-user,.global-toplink .global-toplink-more,.global-toplink .global-toplink-msg{height:16px}
+}
+.global-dropdown-active a.global-toplink-msg,#global-header-msg a.global-toplink-msg-active{background:#f3623a;color:#fff}
+.global-dropdown-active a.global-toplink-msg:hover,#global-header-msg a.global-toplink-msg-active:hover{color:#FFF}
+.global-toplink a.global-toplink-msg:hover{text-decoration:none}
+.global-toplink a.global-toplink-msg span{padding-left:4px}
+.global-dropdown{position:relative;display:inline-block;*display:inline;zoom:1;z-index:666}
+.global-dropdown-hd{position:relative;display:inline-block;*display:inline;padding:3px 3px 0 3px;-moz-border-radius:2px 2px 0 0;-webkit-border-radius:2px 2px 0 0;-o-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;background:transparent;zoom:1;z-index:668;border-bottom:0;filter:alpha(opacity=100)}
+.global-dropdown-hd-normal,.global-dropdown-hd-msg{-moz-border-radius:2px 2px 0 0;-webkit-border-radius:2px 2px 0 0;-o-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;z-index:670;padding:5px 10px 4px;_padding-bottom:6px}
+.global-dropdown-hd-normal{line-height:16px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.global-dropdown-hd-normal,.global-dropdown-hd-msg{padding:5px 10px}
+}
+#global-header-msg{position:relative;top:-2px}
+#global-header-i .global-dropdown-hd-normal{+line-height:15px}
+#global-header-more .global-dropdown-hd-normal{padding:6px 10px\0;line-height:15px\0;_line-height:14px}
+#global-header-more .global-toplink-more,#global-header-msg .global-toplink-msg{_position:relative;_top:2px}
+.global-dropdown-bd{position:absolute;*display:block;top:26px;z-index:2}
+#global-header-msg .global-dropdown-bd{top:28px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.global-dropdown-bd{top:25px}
+#global-header-msg .global-dropdown-bd{top:27px}
+}
+.global-dropdown-bd-pl{left:-2px}
+.global-dropdown-bd-cnt{position:relative;padding:15px 10px 20px 10px;border:1px solid #b3b3b3;background-color:#fff;z-index:669;text-align:left}
+.global-dropdown-bd-cnt .global-tit{color:#808080;font-size:12px;font-weight:700}
+.global-dropdown-bd-cnt .global-tit-line{padding-bottom:2px;border-bottom:1px solid #CCC}
+.global-dropdown-bd-cnt .global-tit .global-tit-link{color:#0087c9;padding:0 6px}
+.global-dropdown-bd-cnt .global-tit .global-tit-action{float:right;font-weight:400}
+.global-dropdown-bd-cnt .global-tit .global-tit-action a{color:#0087c9}
+.global-dropdown-bd-cnt .global-button-box{margin:10px 0}
+.global-dropdown-bd-cnt .global-button-box a{padding:0}
+.global-dropdown-bd-cnt .global-button-box a.global-button-swhite{margin-left:6px}
+.global-dropdown-bd-cnt .global-list{display:block;padding:5px 0 0;border-top:1px solid #fff}
+.global-dropdown-bd-cnt #global-list-user{_border-top:1px solid #ccc}
+.global-dropdown-bd-cnt .global-list li{position:relative;padding:8px}
+.global-dropdown-bd-cnt .global-list li a{color:#666;display:block;padding:0}
+.global-dropdown-bd-cnt .global-list li a:hover{text-decoration:none}
+.global-dropdown-bd-cnt .global-list li:hover,.global-dropdown-bd-cnt .global-list-hover{text-decoration:none;background:#e6e6e6}
+.global-dropdown-bd-cnt li a.global-list-close{position:absolute;top:8px;right:3px;display:none;width:15px;height:15px;background:url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) no-repeat right -1680px;text-indent:-9999em;cursor:pointer;_overflow:hidden;padding:0!important;outline:0}
+.global-dropdown-bd-cnt li.global-list-hover a.global-list-close,.global-dropdown-bd-cnt .global-list li:hover a.global-list-close{display:block}
+.global-dropdown-bd-cnt .global-list-hover .global-list-close-hover,.global-dropdown-bd-cnt .global-list .global-list-close:hover{background-position:right -1700px}
+.global-dropdown-bd-cnt .global-list .global-list-level3,.global-dropdown-bd-cnt .global-list .global-list-level3 a,.global-dropdown-bd-cnt .global-list .global-list-level3 span,.global-dropdown-bd-cnt .global-list .global-list-necessary,.global-dropdown-bd-cnt .global-list .global-list-necessary a,.global-dropdown-bd-cnt .global-list .global-list-necessary span{color:#C30}
+.global-dropdown-bd-cnt .global-list .global-list-confirm{padding:0 10px 10px 10px;background:#ebebeb;zoom:1}
+.global-dropdown-bd-cnt .global-list .global-list-comfirm-txt{padding:5px 0 4px;line-height:normal}
+.global-dropdown-bd-cnt .global-list .global-list-comfirm a{display:inline-block;margin-right:5px;padding:0;line-height:normal}
+.global-dropdown-bd-cnt .global-list .global-button-text{padding:4px 12px 6px 12px;*padding:6px 12px 5px 12px}
+.global-dropdown-active{border:2px solid #e0e0e0;border-bottom:0;background:#e0e0e0;-moz-border-radius:2px 2px 0 0;-webkit-border-radius:2px 2px 0 0;-o-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;*border-top-width:0}
+.global-dropdown-active .global-dropdown-hd{padding:0;*position:relative;*top:2px;*padding-bottom:2px}
+.global-dropdown-active .global-dropdown-hd a{text-decoration:none}
+.global-dropdown-active .global-dropdown-hd-normal,.global-dropdown-active .global-dropdown-hd-msg{border-top:1px solid #b3b3b3;border-left:1px solid #b3b3b3;border-right:1px solid #b3b3b3;background:#FFF}
+.global-dropdown-active .global-dropdown-hd-msg{_padding-bottom:8px}
+.global-dropdown-active .global-dropdown-hd-normal{*padding-bottom:4px}
+.global-dropdown-user{width:185px;height:auto}
+.global-dropdown-i{width:105px;height:auto}
+.global-dropdown-msg{width:300px;height:auto}
+.global-dropdown-more{width:110px;height:auto}
+.global-dropdown-more .global-list,.global-dropdown-i .global-list{border-top:0;padding-top:0}
+#global-header-i,#global-header-user,#global-header-more{z-index:670}
+.global-dropdown-msg .global-list li a{padding-right:10px}
+.global-dropdown-msg .global-list-msg-content{color:#666;display:block;padding-right:10px;_padding-right:15px!important}
+.global-msg-confirm{background:#fff;width:300px}
+.global-msg-confirm a{margin-right:5px}
+.global-msg-confirm .global-list-comfirm-txt{padding:5px 0 4px;line-height:normal}
+#global-dropdown-frame{position:absolute;left:3px;bottom:3px;background:transparent;border:0}
+.global-button{padding:0;display:inline-block;position:relative;text-align:center;text-decoration:none!important;vertical-align:middle;overflow:visible;cursor:pointer}
+div.global-button,p.global-button,span.global-button{*display:inline}
+.global-button-text{white-space:nowrap;display:block;cursor:pointer;border:0;text-decoration:none;overflow:visible}
+.global-button a.global-button-text:hover{text-decoration:none}
+.global-button input.global-button-text,.global-button button.global-button-text{*display:inline}
+.global-button-morange,.global-button-morange:hover,.global-button-mwhite,.global-button-mwhiter:hover,.global-button-sorange,.global-button-sorange:hover,.global-button-swhite,.global-button-swhite:hover,.global-button-mdisable,.global-button-text{background-image:url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png);background-repeat:no-repeat;background-color:transparent}
+.global-button-morange .global-button-text,.global-button-sorange .global-button-text,.global-button-mwhite .global-button-text,.global-button-swhite .global-button-text,.global-button-mdisable .global-button-text{font-family:Verdana,\5b8b\4f53,\9ED1\4F53,sans-serif;font-size:14px;font-weight:700}
+.global-button-mwhite,.global-button-morange{width:75px}
+.global-button-morange{background-position:0 -905px}
+.global-button-morange .global-button-text{display:block;height:31px;line-height:31px;text-align:center;background-position:right -1053px;color:#fff}
+.global-button-morange:hover{background-position:0 -942px}
+.global-button-morange:hover .global-button-text{background-position:right -1090px}
+.global-button-mwhite{background-position:0 -979px}
+.global-button-mwhite .global-button-text{display:block;height:31px;line-height:31px;background-position:right -1127px;color:#595959}
+.global-button-mwhite:hover{background-position:0 -1016px}
+.global-button-mwhite:hover .global-button-text{background-position:right -1164px}
+.global-button-mdisable{background-position:0 -1441px}
+.global-button-mdisable .global-button-text{padding:5px 22px;background-position:right -1477px;color:#e6e6e6;cursor:text}
+.global-button-sorange{background-position:0 -1201px}
+.global-button-sorange .global-button-text{padding:3px 12px 4px 12px;font-size:12px;background-position:right -1321px;color:#fff}
+.global-button-sorange:hover{background-position:0 -1231px}
+.global-button-sorange:hover .global-button-text{background-position:right -1351px}
+.global-button-swhite{background-position:0 -1261px}
+.global-button-swhite .global-button-text{padding:3px 12px 4px 12px;font-size:12px;background-position:right -1381px;color:#595959}
+.global-button-swhite:hover{background-position:0 -1291px}
+.global-button-swhite:hover .global-button-text{background-position:right -1411px}
+.global-button-morange input.global-button-text,.global-button-sorange input.global-button-text,.global-button-mdisable input.global-button-text,.global-button-mwhite input.global-button-text,.global-button-swhite input.global-button-text{*overflow:visible}
+.global-list{display:inline-block;padding:10px 10px}
+.global-list-item a{font-size:12px;line-height:20px}
+.global-footer{margin:0 auto;padding-bottom:30px;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;min-width:950px;text-align:center;color:#808080}
+.global-footer-about{margin-top:20px}
+.global-footer-about li,.global-footer-company li,.global-footer-custom li{display:inline}
+.global-footer-about a{color:#0089d8}
+.global-footer-copyright a{color:#808080}
+.global-footer-copyright{margin-top:15px}
+.global-feedback{position:fixed;right:0;top:180px;width:30px;_position:absolute;z-index:999}
+.global-feedback a{cursor:pointer;display:block;overflow:hidden;position:relative;text-indent:-999em;width:30px;height:89px;background:url(https://apimg.alipay.com/sys/personalprod/style/common/feedback.png) no-repeat scroll transparent;background-position:-30px 0;background-position:0 0\9;box-shadow:0 100px 100px rgba(255,255,255,0.3) inset;-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;transition:all .25s ease-in}
+.global-feedback a:hover{background-position:-30px 0\9;box-shadow:0 100px 100px rgba(255,255,255,0) inset;-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;transition:all .25s ease-in}
+.global-onlineservice{display:inline;position:absolute;right:0;top:88px;z-index:9999}
+.global-birth{float:right;position:relative;padding:8px 5px 0 0;z-index:100}
+.global-birth-icon{position:relative;display:block;background:url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) -60px -1733px no-repeat;width:20px;height:16px;overflow:hidden;text-indent:-100px;z-index:10}
+.global-birth-tip{position:absolute;width:90px;height:24px;line-height:24px;text-align:center;top:2px;left:-103px}
+.global-birth-tip-content{position:relative;height:100%;width:100%;border:1px solid #dea90c;background:#ffff8d;z-index:2}
+.global-birth-tip-shadow{width:100%;height:100%;position:absolute;background:#a8a8a8;top:2px;border:1px solid #a8a8a8;z-index:1;left:2px}
+.global-birth-tip-angle{position:absolute;display:block;width:11px;height:11px;right:-12px;_right:-10px;top:7px;z-index:3;background:url(https://i.alipayobjects.com/e/201204/33W2Wwx0u3.png) right -1720px no-repeat}
+.global-swfObj{position:absolute;width:350px;height:300px;z-index:100;left:-320px;top:-10px}
+.global-robot{width:290px;height:110px;background:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png) no-repeat right bottom;color:#666}
+.global-robot-people{position:relative;height:84px;width:59px}
+.global-robot-organ{display:block;position:absolute;background-image:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png);background-repeat:no-repeat}
+.global-robot-head{left:7px;height:47px;width:45px;background-position:0 0}
+.global-robot-head-active{background-position:0 -50px}
+.global-robot-ear-left{top:26px;height:14px;width:6px;background-position:-46px 0}
+.global-robot-ear-left-active{background-position:-46px -50px}
+.global-robot-ear-right{top:26px;left:53px;height:14px;width:6px;background-position:-53px 0}
+.global-robot-ear-right-active{background-position:-53px -50px}
+.global-robot-arm-left{top:48px;left:6px;height:21px;width:11px;background-position:-84px 0}
+.global-robot-arm-left-active{background-position:-84px -50px}
+.global-robot-arm-right{top:48px;right:6px;height:21px;width:11px;background-position:-120px 0}
+.global-robot-arm-right-active{background-position:-120px -50px}
+.global-robot-body{top:48px;left:18px;height:23px;width:23px;background-position:-60px 0}
+.global-robot-body-active{background-position:-60px -50px}
+.global-robot-heart{top:51px;left:22px;height:15px;width:14px;background-position:-131px 0}
+.global-robot-heart-active{background-position:-131px -50px}
+.global-robot-leg-left{top:72px;left:20px;height:7px;width:8px;background-position:-98px 0}
+.global-robot-leg-left-active{background-position:-98px -50px}
+.global-robot-leg-right{top:72px;left:30px;height:7px;width:8px;background-position:-108px 0}
+.global-robot-leg-right-active{background-position:-108px -50px}
+.global-robot-content{float:right;width:165px;padding-right:20px;margin-top:20px}
+.global-robot-item{position:relative;height:28px;line-height:2;text-indent:20px;border-bottom:1px solid #ebebeb;border-top:1px solid #fff}
+.global-robot-item-first{border-top:0}
+.global-robot-item-last{border-bottom:0}
+.global-robot-progressbar{position:absolute;right:0;top:8px;display:block;width:60px;border:1px solid #d9d9d9}
+.global-robot-progressbar-content{display:block;height:7px;border-bottom:1px solid #d48e11;background:#f4a314;*overflow:hidden}
+.global-toplink-robot-icon{display:inline-block;*display:inline;*zoom:1;height:12px;width:16px;margin-right:2px;background:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png) no-repeat -150px -33px}
+.global-robot-icon{position:absolute;top:6px;left:0;display:block;height:12px;width:14px;vertical-align:0}
+.global-robot-icon1{background:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png) no-repeat -150px 0}
+.global-robot-icon2{background:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png) no-repeat -150px -17px}
+.global-robot-icon3{background:url(https://i.alipayobjects.com/e/201206/2p2RwlKzqb.png) no-repeat -150px -48px}
+.global-robot-red{color:#c30}
+a.global-toplink-robot,a.global-toplink-robot:hover{color:#666;text-decoration:none}
+.global-robot-loading{overflow:hidden;background:url(https://i.alipayobjects.com/e/201205/2bW1qj1jon.gif) no-repeat 64px 20px;text-indent:-999px;height:60px}
+.global-xbox,.global-xbox-action{position:absolute;top:0}
+.global-xbox{z-index:999;left:50%;top:50%;width:300px;height:200px;background:#FFF;border:6px solid rgba(0,0,0,0.5);*border:6px solid #767576;border:6px solid #767576\0;border:6px solid rgba(0,0,0,0.5)\9\0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}
+.global-xbox-action{display:block;right:10px;top:4px}
+.global-xbox-close{color:#999;font-family:tahoma;font-size:24px;line-height:24px;text-decoration:none}
+.global-xbox-close:hover{color:#808080}
+.global-xbox-content{width:100%;height:100%}
+.global-xbox-mask{opacity:.6;filter:alpha(opacity=60);-moz-opacity:.6;background:black}

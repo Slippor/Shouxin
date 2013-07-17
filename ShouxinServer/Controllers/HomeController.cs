@@ -6,13 +6,14 @@ using System.Web.Mvc;
 
 namespace ShouxinServer.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
             ViewBag.Message = "手信首页";
 
-            return View();
+            var viewModel = GetViewModel();
+            return View(viewModel);
         }
     }
 }

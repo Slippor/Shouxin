@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using ShouxinServer.Common;
 
 namespace ShouxinServer
 {
@@ -7,6 +8,12 @@ namespace ShouxinServer
     {
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
+        {
+            RegisterScriptBundles(bundles);
+            RegisterStyleBundles(bundles);
+        }
+
+        private static void RegisterScriptBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
@@ -22,10 +29,23 @@ namespace ShouxinServer
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
+        }
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/Alipay-2.3.css",
-                "~/Content/Custom.css"));
+        private static void RegisterStyleBundles(BundleCollection bundles)
+        {
+            bundles.Add(new StyleBundle(StyleConfigs.CommonVirtualPath).Include(
+                "~/Content/Custon/Custom.css",
+                "~/Content/Ali/Alipay-2.3.css"
+                ));
+
+            bundles.Add(new StyleBundle("~/Content/css/Index").Include(
+                ));
+
+            bundles.Add(new StyleBundle("~/Content/css/Register").Include(
+                "~/Content/Ali/alice.common.v1-1.4.css",
+                "~/Content/Ali/memberprod.authreg-1.2.css",
+                "~/Content/Custom/Custom-Register.css"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

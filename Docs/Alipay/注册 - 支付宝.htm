@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://memberprod.alipay.com/account/reg/index.htm -->
+<html class="bgGreyHtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta charset="gb2312">
+
+					<title>注册 - 支付宝</title>
+		
+					<meta name="keywords" content="会员注册,支付宝免费注册,支付宝注册,开通支付宝,注册支付宝账户,手机号码注册/Email注册,网上支付/网购付款/在线支付/在线付款"> 
+		
+					<meta name="description" content="欢迎免费注册支付宝，支付宝-全球领先的独立第三方支付平台，致力于为广大用户提供安全快速的电子支付/网上支付/安全支付/手机支付体验以及转账收款/水电煤缴费/信用卡还款等生活服务应用；为广大为从事电子商务的网站提供支付产品/支付服务的在线订购和技术支持等服务，帮助商家快速接入支付工具，高效、安全、快捷地开展电子商务。"> 
+				
+		
+
+<link rel="icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico" type="image/x-icon">		
+				
+<!-- uitpl:/component/trackerTime.vm -->
+<!-- CMS:支付宝全站/监控埋点/iconfont开始:alipay/tracker/iconfont.vm --><style>
+@font-face {
+    font-family: "rei";
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502"); /* IE9 */
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://i.alipayobjects.com/common/fonts/rei.woff?20130502") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130502")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130502#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"rei";
+    font-style: normal;
+    font-weight: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+</style><!-- CMS:支付宝全站/监控埋点/iconfont结束:alipay/tracker/iconfont.vm -->
+<!-- CMS:支付宝全站/监控埋点/seajs 部署开始:alipay/tracker/seajs.vm -->	
+<script type="text/javascript">
+(function(){function k(a){return(a=String(a).match(l))?a[0]:""}function f(a,m,c,f,g){if(!g&&arguments.callee.caller){for(var b=arguments.callee.caller,d=[];b.arguments&&(b.arguments.callee&&b.arguments.callee.caller)&&!(b=b.arguments.callee.caller,d.push("at "+k(b)),b.caller===b););g=d.join("\n")}b={profile:"jserror",msg:a||"",file:m||"",line:c||0,num:f||"",stack:g||"",lost:h.join(",")};e._DATAS.push(b);return b}if(!window.monitor){var e=window.monitor={};e._DATAS=[];var h=[],d={};e.lost=function(a){d.hasOwnProperty(a)||(d[a]=!0,h.push(a))};e.log=function(a,d){if(a){var c=d||"log";3===arguments.length&&(c="product",a=Array.prototype.join.call(arguments,"|"));c={profile:c,seed:String(a)};e._DATAS.push(c);return c}};var l=/^function\b[^\)]+\)/;e.error=function(a){if(a instanceof Error)return f(a.message||a.description,a.fileName,a.lineNumber||a.line,a.number,a.stack||a.stacktrace)};window.onerror=function(a,d,c){f(a,d,c);return!1}}})();
+</script>
+
+<script charset="utf-8" id="seajsnode" src="./注册 - 支付宝_files/saved_resource"></script>
+
+<script>
+
+  (function(){
+		  
+    var JQ = '/jquery/1.7.2/jquery.js';
+	seajs.cache['https://a.alipayobjects.com/gallery' + JQ] = seajs.cache['https://a.alipayobjects.com/jquery' + JQ];
+	
+    var GALLERY_MODULES = [
+      'async','backbone','coffee','cookie','es5-safe','handlebars','iscroll',
+      'jasmine','jasmine-jquery','jquery','jquery-color','json','keymaster',
+      'labjs','less','marked','moment','mustache','querystring','raphael',
+      'socketio','store','swfobject','underscore','zepto','ztree'
+    ];
+
+    var ARALE_MODULES = [
+      'autocomplete','base','calendar','class','cookie','dialog','easing',
+      'events','iframe-uploader','iframe-shim','messenger','overlay','popup',
+      'position','select','switchable','tip','validator','widget'
+    ];
+
+    var util = seajs.pluginSDK.util;
+
+    function contains(arr, item) {
+      return util.indexOf(arr, item) > -1
+    }
+
+    function map(id) {
+      id = id.replace('#', '');
+
+      var parts = id.split('/');
+      var len = parts.length;
+      var root, name;
+
+      // id = root/name/x.y.z/name
+      if (len === 4) {
+        root = parts[0];
+        name = parts[1];
+		
+        // gallery 或 alipay 开头的没有问题
+        if (root === 'alipay' || root === 'gallery') {
+          return id;
+        }
+
+        // arale 开头的
+        if (root === 'arale') {
+          // 处理 arale/handlebars 的情况
+          if (contains(GALLERY_MODULES, name)) {
+            return id.replace('arale/', 'gallery/');
+          } else {
+            return id;
+          }
+        }
+      }
+      // id = name/x.y.z/name
+      else if (len === 3) {
+        name = parts[0]
+
+        // 开头在 GALLERY_MODULES 或 ARALE_MODULES
+        if (contains(GALLERY_MODULES, name)) {
+          return 'gallery/' + id;
+        } else if (contains(ARALE_MODULES, name)) {
+          return 'arale/' + id;
+        }
+      }
+
+      return id;
+    }
+
+    seajs.config({
+      alias: {
+        '$': 'jquery/jquery/1.7.2/jquery',
+        '$-debug': 'jquery/jquery/1.7.2/jquery',
+        'jquery': 'jquery/jquery/1.7.2/jquery'
+      }
+    });
+
+    var _use = seajs.use;
+
+    seajs.use = function(ids, callback) {
+      if (typeof ids === 'string') {
+        ids = [ids];
+      }
+
+      ids = util.map(ids, function(id) {
+        return map(id);
+      });
+
+      return _use(ids, callback);
+    }
+
+  })();
+</script><!-- CMS:支付宝全站/监控埋点/seajs 部署结束:alipay/tracker/seajs.vm -->
+<!-- CMS:支付宝全站/监控埋点/全站页面效率统计开始:alipay/tracker/tracker_time.vm --><meta name="ABTest" content="">
+
+<script type="text/javascript">
+window._to = { start: new Date() };
+</script>
+
+
+<script charset="utf-8" src="./注册 - 支付宝_files/saved_resource(1)"></script>
+
+<!-- CMS:支付宝全站/监控埋点/全站页面效率统计结束:alipay/tracker/tracker_time.vm -->		
+					<link charset="utf-8" rel="stylesheet" href="https://a.alipayobjects.com/memberprod/memberprod.authreg-1.2.css" media="all">
+		
+				
+
+
+
+
+
+<link media="all" rel="stylesheet" href="./注册 - 支付宝_files/alice.common.v1-1.4.css" type="text/css">
+					<style type="text/css">
+/* 两个选框 */
+.tab-choose{
+    width:778px;
+    height:67px;
+    box-shadow: 0 0 3px #C7C5C5;
+}
+.tab-choose-item{
+    float:left;
+}
+.btn-personal,.tab-choose-item a,.tab-choose-item-personal .arrow,.ui-dropdown-trigger{
+    background-image:url("https://i.alipayobjects.com/e/201209/1DY4fMlnIi.png");
+    background-repeat:no-repeat;
+}
+.tab-choose-item a{
+    display:block;
+    height:68px;
+    text-indent:-9999em;
+}
+.tab-choose-item-personal{
+    position:relative;
+}
+.tab-choose-item-personal a{
+    background-position:0 0;
+    width:388px;
+}
+.tab-choose-item-personal .arrow{
+    display:block;
+    width:25px;
+    height:11px;
+    background-position: 0 -71px;
+    position:absolute;
+    top:67px;
+    left:47%;
+}
+.tab-choose-item-business a{
+    background-position:-386px 0;
+    width: 390px;
+}
+.box-shadow{
+    box-shadow: 0 0 5px #c7c5c5;
+    background:#fff;
+    border:1px solid #e7e7e7;
+    border-top: none;
+    width: 776px;
+}
+/* 表单重设 */
+.ui-form-general .ui-form-item{
+	/**padding-left:140px;**/
+}
+.ui-form-general{
+	padding-top:50px;
+}
+.ui-form-general .ui-label{
+	width:140px;
+	margin-left:-140px;
+}
+.login-form-cnt{
+    width:418px;
+    background:#fff;
+    padding: 15px 200px 0 160px;
+}
+.license{ 
+    margin-left:60px;
+    float: left;
+    vertical-align: middle;        
+}
+.ime-disabled{
+    ime-mode: disabled;
+}
+.checkcode-img{
+    border: 1px solid #C1C1C1;
+    vertical-align: middle;
+    padding: 5px;
+}
+.ui-form-item {
+	position: relative;
+	zoom:1;
+}
+.ui-form-item .ui-input{
+    margin-right: 6px;
+}
+.ui-form-item-checkcode-error .ui-form-explain{
+    background-color:#fff;
+    border: none;
+    background-position: -59px -66px;
+    padding: 10px 8px 9px 25px;
+    position: absolute;
+    top:0;
+}
+.ui-form-item-checkcode-error .ui-form-explain .ui-form-arrow{
+    display: none;
+}
+.ui-form-item-checkcode-error .ui-input{
+      border: 1px solid #FF0000;
+}
+
+.reg-area{
+    /**text-align: right;del by lin.weng**/
+}
+.ui-form-l .ui-form-item-area{
+	padding-bottom:27px;
+	_padding-bottom:20px;
+}
+.ui-form-item-area .ui-label-area{
+	padding-top:8px;
+}
+.ui-form input::-webkit-input-placeholder { color:#999; }
+.ui-form input:-moz-placeholder { color:#999; }
+
+/* 阿里账户 */
+.aliusers-list li{
+    float: left;
+    margin: 10px 8px 0 auto;
+    white-space: nowrap;
+}
+.ui-ali-icons{
+    background-image: url("https://i.alipayobjects.com/e/201208/3ocQFumQPT.png");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: text-top;
+    overflow:hidden;
+}
+.ui-ali-icons-1{
+    background-position: 0 -99px;
+}
+.ui-ali-icons-3, .ui-ali-icons-4{
+    background-position: 0 -40px;
+}
+.ui-ali-icons-15{
+    background-position: 0 -40px;
+}
+.ui-ali-icons-5{
+    background-position: 0 -80px;
+}
+.ui-ali-icons-0{
+    background-position: 0 0;
+}
+.ui-ali-icons-2{
+    background-position: 0 -60px;
+}
+/***select重新设置***/
+.ui-form-item-area .ui-littleselect-trigger{
+	border:1px solid #ccc;
+	height:28px;
+	line-height:28px;
+}
+</style>
+		
+		<script type="text/javascript" charset="utf-8">
+			AralePreload = [];
+			var AP = AP || {};
+			AP.PageVar = {
+				app_domain: "https://memberprod.alipay.com",
+				personal_domain:"https://lab.alipay.com",
+				authcenter_domain:"https://auth.alipay.com",
+				certify_domain:"https://certify.alipay.com",
+				selfhelpprod_domain:"https://accounts.alipay.com"
+			}
+			var oldDomain=document.domain;
+			var oldDomainNum=oldDomain.indexOf('alipay');
+			var newDomain=oldDomain.substring(oldDomainNum,oldDomain.length);
+			document.domain=newDomain;
+		</script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript">
+		// html5shiv MIT @rem remysharp.com/html5-enabling-script
+		// iepp v1.6.2 MIT @jon_neal iecss.com/print-protector
+		/*@cc_on(function(a,b){function r(a){var b=-1;while(++b<f)a.createElement(e[b])}if(!(!window.attachEvent||!b.createStyleSheet||!function(){var a=document.createElement("div");a.innerHTML="<elem></elem>";return a.childNodes.length!==1}())){a.iepp=a.iepp||{};var c=a.iepp,d=c.html5elements||"abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",e=d.split("|"),f=e.length,g=new RegExp("(^|\\s)("+d+")","gi"),h=new RegExp("<(/*)("+d+")","gi"),i=/^\s*[\{\}]\s*$/,j=new RegExp("(^|[^\\n]*?\\s)("+d+")([^\\n]*)({[\\n\\w\\W]*?})","gi"),k=b.createDocumentFragment(),l=b.documentElement,m=l.firstChild,n=b.createElement("body"),o=b.createElement("style"),p=/print|all/,q;c.getCSS=function(a,b){if(a+""===undefined)return"";var d=-1,e=a.length,f,g=[];while(++d<e){f=a[d];if(f.disabled)continue;b=f.media||b,p.test(b)&&g.push(c.getCSS(f.imports,b),f.cssText),b="all"}return g.join("")},c.parseCSS=function(a){var b=[],c;while((c=j.exec(a))!=null)b.push(((i.exec(c[1])?"\n":c[1])+c[2]+c[3]).replace(g,"$1.iepp_$2")+c[4]);return b.join("\n")},c.writeHTML=function(){var a=-1;q=q||b.body;while(++a<f){var c=b.getElementsByTagName(e[a]),d=c.length,g=-1;while(++g<d)c[g].className.indexOf("iepp_")<0&&(c[g].className+=" iepp_"+e[a])}k.appendChild(q),l.appendChild(n),n.className=q.className,n.id=q.id,n.innerHTML=q.innerHTML.replace(h,"<$1font")},c._beforePrint=function(){o.styleSheet.cssText=c.parseCSS(c.getCSS(b.styleSheets,"all")),c.writeHTML()},c.restoreHTML=function(){n.innerHTML="",l.removeChild(n),l.appendChild(q)},c._afterPrint=function(){c.restoreHTML(),o.styleSheet.cssText=""},r(b),r(k);if(c.disablePP)return;m.insertBefore(o,m.firstChild),o.media="print",o.className="iepp-printshim",a.attachEvent("onbeforeprint",c._beforePrint),a.attachEvent("onafterprint",c._afterPrint)}})(this,document)@*/
+		</script>
+		<![endif]-->
+	<link charset="utf-8" rel="stylesheet" href="https://a.alipayobjects.com/u/css/201304/BYLrWZ40T.css"></head>
+    <body>
+		<!-- 全站公告位 -->
+		
+ 
+<!-- CMS:全站顶部公告开始:alipay/notice/headNotice.vm --><!-- CMS:全站顶部公告结束:alipay/notice/headNotice.vm -->		<!-- /全站公告位 -->
+
+		<!-- 头部 -->
+		<header id="header">
+			<div class="grid-990 header-wrap fn-clear">
+				<figure id="alipay-img-logo" class="fn-left">
+                    <a href="https://www.alipay.com/" title="支付宝-注册" seed="alipayImgLogo-link" smartracker="on"><img src="./注册 - 支付宝_files/3lr1ADN3Vj.png" alt="支付宝-注册"></a><strong>注册</strong>
+				</figure>
+				<!-- 快速信息及链接 -->
+				<div class="header-link the-alipay-global">
+					
+
+
+
+
+
+
+
+
+<!-- CMS:导航消息开关开始:alipay/nav/msgSwitch.vm --><script>
+MSGSWITCH = true;
+</script>
+
+<!-- CMS:导航消息开关结束:alipay/nav/msgSwitch.vm -->
+<!-- from /uiweb/uitpl -->
+<div class="global-toplink">
+                <a href="https://auth.alipay.com/login/index.htm?needTransfer=true&goto=http://memberprod.alipay.com/account/reg/index.htm" class="global-toplink-link" seed="global-header-login">登录</a>
+        <em class="global-separator">-</em>
+        <a href="https://lab.alipay.com/user/reg/index.htm" class="global-toplink-link" seed="global-header-register">注册</a>
+        <em class="global-separator">|</em>
+      
+          
+            
+                            <div id="global-header-i" class="global-dropdown">
+            <div class="global-dropdown-hd">
+                <div class="global-dropdown-hd-normal">
+                    <a href="https://lab.alipay.com/user/i.htm" class="global-toplink-i global-toplink-link" seed="global-i-i">我的支付宝</a>
+                </div>
+            </div>
+            <div class="global-dropdown-bd global-dropdown-bd-pl sl-alpha global-hide" style="z-index: 99; display: none; position: absolute; left: -2px; top: 24px;">
+                <div class="global-dropdown-bd-cnt global-dropdown-i">
+                    <ul id="global-list-i" class="global-list">
+                        <li><a href="https://lab.alipay.com/user/assets/index.htm" seed="global-i-account" target="_blank">账户管理</a></li>
+                        <li><a href="https://lab.alipay.com/consume/record/index.htm" target="_blank" seed="global-i-record">交易记录</a></li>
+                        <li><a href="https://securitycenter.alipay.com/sc/index.htm" seed="global-i-security" target="_blank">安全中心</a></li>
+                        <li><a href="https://huiyuan.alipay.com/benefits/index.htm" seed="global-i-benefit" target="_blank">会员专享</a></li>
+                        <li><a href="https://app.alipay.com/" seed="global-i-appstore" target="_blank">应用中心</a></li>
+                    </ul>
+                </div>
+            </div><!-- .global-dropdown-bd -->
+        </div><!-- #global-dropdown-i -->
+        <em class="global-separator">|</em>
+            
+    
+                                <a href="http://help.alipay.com/" seed="global-header-help" target="_blank" class="global-toplink-link">帮助中心</a>
+        <em class="global-separator">|</em> 
+    
+                <a href="https://egg.alipay.com/" seed="global-header-egg" target="_blank" class="global-toplink-link">提建议</a>
+    <em class="global-separator">|</em>
+
+    <div id="global-header-more" class="global-dropdown">
+        <div class="global-dropdown-hd">
+            <div class="global-dropdown-hd-normal">
+                <a href="https://memberprod.alipay.com/account/reg/index.htm#" class="global-toplink-more global-toplink-link" seed="global-more-link">更多</a>
+            </div>
+        </div>
+        <div class="global-dropdown-bd global-dropdown-bd-pr sl-alpha global-hide" style="z-index: 99; display: none; position: absolute; left: -73px; top: 24px;">
+            <div class="global-dropdown-bd-cnt global-dropdown-more">
+                <ul id="global-list-more" class="global-list">
+                                            <!-- CMS:more开始:alipay/nav/more.vm -->      <li><a href="http://mobile.alipay.com/" title="无线支付" seed="global-more-mobile" target="_blank">无线支付</a></li>
+      <li><a href="https://financeprod.alipay.com/account/finance/index.htm" title="理财专区" seed="global-more-finance" target="_blank">理财专区</a></li>
+      <li><a href="https://b.alipay.com/newIndex.htm?src=person_alipay_001" title="商家服务" seed="global-more-merchant" target="_blank">商家服务</a></li>
+      <li><a href="http://club.alipay.com/" title="论坛" seed="global-more-club" target="_blank">论坛</a></li>
+      <li><a href="https://www.alipay.com/" title="返回支付宝首页" seed="global-more-home" target="_blank">返回支付宝首页</a></li>
+  <!-- CMS:more结束:alipay/nav/more.vm -->                                    </ul>
+            </div>
+        </div>
+    </div><!-- #global-dropdown-more -->
+
+</div><!-- .global-toplink -->
+
+<script type="text/x-handlebars-template" id="global-template-birth" charset="utf-8">
+    <div class="global-birth">
+        <a href="#" class="global-birth-icon global-toplink-link" seed="birthdayicon_02">生日快乐</a>
+        <div class="global-birth-tip" style="display:none">
+            <div class="global-birth-tip-content">点击生日祝福</div>
+            <div class="global-birth-tip-shadow"></div>
+            <div class="global-birth-tip-angle"></div>
+        </div>
+        <div id="global-birthSwf">
+            <div id="global-swfObj"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+(function(doc) {
+    document.domain = document.domain.split(".").slice(-2).join(".");
+ 
+  
+    window.GLOBAL = {
+        system: {
+            personal: "https://lab.alipay.com",
+            personalportal: "https://my.alipay.com",
+            authcenter: "https://auth.alipay.com",
+            apimg: "https://i.alipayobjects.com",
+            assets: "https://a.alipayobjects.com"
+        },
+        today:'20130717',
+        birthday: ''
+    };
+
+    seajs.use('jquery');
+    seajs.use(['alipay/common-v1/0.9.5/v1', 'jquery'],function(v1, $){
+        var Birthday = v1.Birthday;
+        var Account = v1.Account;
+        var Count = v1.Count;
+        var Message = v1.Message;
+        var Robot = v1.Robot;
+        var Dropdown = v1.Dropdown;
+
+        var msgEl = $('#global-header-msg');
+        var accountEl = $('#global-header-user');
+        var moreEl = $('#global-header-more');
+        var iEl = $('#global-header-i');
+        var robotEl = $('#global-header-robot');
+
+        GLOBAL.isBirthday = Birthday.isBirthday;
+        if(Birthday.isBirthday){
+            GLOBAL.Birthday = new Birthday({
+                template: $('#global-template-birth').html(),
+                parentNode: $('#global-header-area')[0]
+            }).render();
+
+            // flash要获取的数据
+            window.J_ConstellData = function(){
+                return GLOBAL.Birthday.param;
+            };
+
+            // 关闭flash调用
+            window.foldFlash = function(){
+                GLOBAL.Birthday.hideFlash();
+            };
+        }
+
+        function afterShow() {
+            this.get('trigger').parent().addClass('global-dropdown-active');
+        };
+        function afterHide() {
+            this.get('trigger').parent().removeClass('global-dropdown-active');
+        };
+
+        if (msgEl[0]) {
+            // 是否发送消息，由cms(alipay/nav/msgSwitch.vm) 返回
+            if (window.MSGSWITCH && msgEl.attr('data-msg') !== 'N') {
+                Message.getMessageCount(function(data) {
+                    var message = new Message({
+                        trigger: msgEl.find('.global-dropdown-hd')[0],
+                        element: msgEl.find('.global-dropdown-bd')[0],
+                        align: {
+                            baseXY: [-2, msgEl.height()-1]
+                        },
+                        afterShow: function(){
+                            if (Count.getCount() > 0) {
+                                afterShow.call(this);
+                            }
+                        }, 
+                        afterHide: function(){
+                            afterHide.call(this);
+                        } 
+                    }).render();
+
+                    if (data.popMsg && data.infos.length) {
+                        message.renderMsg(data);
+                        // 消息中心的页面不直接显示浮层
+                        if (!(/\/messager\/(history|new)\.htm/i.test(location.href))) {
+                            message.show();
+                        }
+                    }
+                });
+                } else {
+                Count.hideCount();
+            }
+        }
+        if (accountEl[0]) {
+            var accountTrigger = accountEl.find('.global-dropdown-hd');
+            var account = new Account({
+                trigger: accountTrigger[0],
+                element: accountEl.find('.global-dropdown-bd')[0],
+                align: {
+                    baseXY: [-2, accountTrigger.height()-2]
+                },
+                afterShow: afterShow, 
+                afterHide: afterHide 
+            }).render();
+        }
+        if (moreEl[0]) {
+            var moreTrigger = moreEl.find('.global-dropdown-hd');
+            var more = new Dropdown({
+                trigger: moreTrigger[0],
+                element: moreEl.find('.global-dropdown-bd')[0],
+                align: {
+                    selfXY: ['100%',0],
+                    baseXY: ['100%-2px','100%-5px']
+                },
+                afterShow: afterShow, 
+                afterHide: afterHide 
+            }).render();
+        }
+        moreEl.find('#global-list-more li').hover(
+          function(e) {
+            $(e.currentTarget).addClass('global-list-hover');
+          }, function(e) {
+            $(e.currentTarget).removeClass('global-list-hover');
+          }
+        );
+        if (iEl[0]) {
+            var iTrigger = iEl.find('.global-dropdown-hd');
+            var i = new Dropdown({
+                trigger: iTrigger[0],
+                element: iEl.find('.global-dropdown-bd')[0],
+                align: {
+                    baseXY: [-2, iTrigger.height()-2]
+                },
+                afterShow: afterShow, 
+                afterHide: afterHide 
+            }).render();
+        }
+
+      if (robotEl[0]) {
+          var robotTrigger = robotEl.find('.global-dropdown-hd');
+          var i = new Robot({
+              trigger: robotTrigger[0],
+              template: $('#global-template-robot').html().replace(/@if/g,'#'+'if'),
+              model: {isLogin: robotEl.attr('data-login')==='true'},
+              parentNode: robotEl[0],
+              align: {
+                  baseXY: [-2, robotTrigger.height()-2]
+              },
+              afterShow: afterShow, 
+              afterHide: afterHide 
+          }).render();
+      }
+    });
+})(document);
+</script>
+
+<!-- CMS:生日关怀运营内容开始:personal/personalpublic/birthday.vm --><script>
+    GLOBAL.BIRTHURL = 'https://i.alipayobjects.com/e/201205/2bYT4D3i49.swf';
+    
+    window.getUrl = function(){
+    window.open("http://fun.alipay.com/shengri/index.htm");
+  };
+  </script><!-- CMS:生日关怀运营内容结束:personal/personalpublic/birthday.vm -->				</div>
+				<!-- /快速信息及链接 -->
+			</div>
+		</header>
+		<!-- / 头部 -->
+
+		<div id="container">
+
+
+<div class="grid-780 grid-780-pd fn-hidden fn-clear">
+    <div class="navi-container">
+<ol class="ui-step    ui-step-4 ">
+			<li class="ui-step-start ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">验证账户名</span>
+        </div>
+    </li>		
+		
+			<li>
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">设置身份信息</span>
+        </div>
+    </li>		
+	
+				        <li>
+            <div class="ui-step-line">-</div>    
+            <div class="ui-step-icon">        
+                <i class="iconfont">y</i>
+                <i class="ui-step-number">3</i>
+                <span class="ui-step-text">设置支付方式</span>
+            </div>
+         </li>			
+				
+	
+	
+	
+		<li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">&#61481;</i>
+            <span class="ui-step-text">成功</span>
+        </div>
+    </li>	
+</ol>
+</div>
+
+</div>
+<div class="grid-780 fn-clear"> 
+    <ul class="tab-choose">
+        <li class="tab-choose-item tab-choose-item-personal"><a href="./注册 - 支付宝_files/注册 - 支付宝.htm" seed="tabChooseItem-link" smartracker="on">个人账户</a><em class="arrow"></em></li>
+        <li class="tab-choose-item tab-choose-item-business"><a href="https://memberprod.alipay.com/account/reg/enterpriseIndex.htm" seed="tabChooseItem-linkT1" smartracker="on">企业账户</a></li>
+    </ul>  
+</div>
+<div class="grid-780 box-shadow fn-clear">
+		<!-- 设置js全局变量 -->
+	<script type="text/javascript">
+		var form_tk = "sIfY0lNWu9O7e4NwiMqMibQkUooYIDz0";//将token付值给form_tk变量
+	</script>
+	<!-- 引入rds提供的js -->
+	<script type="text/javascript" src="./注册 - 支付宝_files/ua_memberprod_personal_register.js"></script>
+    <form id="J-index-form" method="post" class="ui-form ui-form-l ui-form-general" action="./注册 - 支付宝_files/注册 - 支付宝.htm" novalidate="novalidate" data-widget-cid="widget-0"><input type="hidden" name="ua" id="UA_InputId" value="075W8MIbcjBTISlMHh+m/o6VGB5dVNA+TVVdFpN|WECKjK8e0oy6IukPfMUZdSk=|WcELQFJA3T9RZ35a6OElS2r/t337kB3Bt47GTYg=|XkYKb33uzwVdyhC53H+fAzUHy2IFRneX2++3vRu5ANyEoHBfraTV|X0dJLInwXDgXDMbAQxqefA827sKFFpPf9O0nIaNB3YOontZdmA==|XMcNKTvZ|XUGLr71f|UkpGI4aPEvSHMKyLaRipYQ29pIp8906IpZVPQrS3VgxuWUKHgZIbx7MF2RwLKLHthTPrZxB55AJu/jQQZv0w7pwAi04pmkMZeczWOz3+So7g1l15vF4=|U0qAyzlg3Iq6o29o2hvfvZaOAqT3rnYcK76y9KcOos78Z3D7|UEiD5vQm9pi3LSFE8fg4XGrzOP7tlEgiE4jEq1kwjOjcwMxq6Uic9tnCjggbil7oyVxQ28kr|UcgCSVtS/pClP/XTkAGtw/Fmcfo=|Vs8FTlxP9ixfb3XYnhWRx/fvo+VXxnocNy/jZRb0hQ==|V02HzN7NdK7d7fdaHJcTRR8HCy0OV5/B8twWMIKLD1lpc/9ZnH4=|VM0HTF5X+5+qsnj+3UToiLsgLKpvjQ==|VcwH4lAphefM1BgerD3tgaqwvtu4GbXV5Xy2sALDA1Vg9fidng+jx5s=">
+        	<input type="hidden" name="_form_token" value="sIfY0lNWu9O7e4NwiMqMibQkUooYIDz0">
+		
+        <fieldset>
+            <legend>注册</legend>
+            <div class="ui-form-item ui-form-item-first ui-form-item-area">
+			    <label class="ui-label ui-label-area">您所在的国家或地区</label>
+                <input type="hidden" id="country" name="country" value="CN">
+                <input type="hidden" id="acc-type" name="accType" value="2">
+                <select class="fn-hide" id="country-1" name="country-1" seed="JIndexForm-country1" smartracker="on" style="display: none;" data-widget-cid="widget-3" data-validator-set="widget-3">
+											<option value="CN" selected="true">中国大陆</option>
+					                    <option value="HK">香港</option>
+                    <option value="MO">澳门</option>
+					<option value="TW">台湾</option>
+                    <option value="">海外</option>
+                </select><a href="https://memberprod.alipay.com/account/reg/index.htm#" class="ui-select-trigger" style="width: 49px;">中国大陆</a>
+                <select class="fn-hide" name="country-2" id="country-2" seed="JIndexForm-country2" smartracker="on" style="display: none;">
+                    <option value="KR" selected="selected">韩国</option>
+                    <option value="JP">日本</option>
+                    <option value="SG">新加坡</option>
+                    <option value="MY">马来西亚</option>
+                </select><a href="https://memberprod.alipay.com/account/reg/index.htm#" class="ui-select-trigger fn-hide" style="width: 49px;">韩国</a>
+            </div>
+                                <div class="ui-form-item">
+                <label for="J-accName" class="ui-label">账户名</label>
+				<input id="J-accName" name="accName" class="ui-input" type="text" placeholder="输入手机号码或电子邮箱" data-explain="输入的手机号码或电子邮箱将作&lt;br /&gt;为账户名。" data-error="    " maxlength="100" value="" seed="JIndexForm-JAccName" smartracker="on" autocomplete="off" data-widget-cid="widget-1" data-validator-set="widget-1">
+            </div>
+                                <div class="ui-form-item             
+    ">
+                <label for="J-checkcode" class="ui-label">验证码</label>
+                <input id="J-checkcode" name="checkCode" class="ui-input ui-input-100 ime-disabled" type="text" autocomplete="off" data-explain="输入左图中的字符，不区分大小写。" data-error="    " placeholder="输入验证码" maxlength="4" seed="JIndexForm-JCheckcode" smartracker="on" data-widget-cid="widget-2" data-validator-set="widget-2">
+                <span class="sl-checkcodeIcon"><span class="checkcodeIcon" id="checkcodeIcon"></span></span>
+                <img id="J-checkcode-img" title="点击图片刷新验证码" class="checkcode-img" complete="complete" src="./注册 - 支付宝_files/checkcode" alt="输入验证码" style="cursor:pointer;" seed="JIndexForm-J-checkcode-img" smartracker="on">
+		   </div>
+
+            <div class="ui-form-item ui-form-item-checkbox">
+                <input id="J-agree" name="agree" checked="checked" class="ui-checkbox" type="checkbox" seed="JIndexForm-JAgree" smartracker="on">
+                <label for="J-agree" class="ui-checkbox-label">我同意<a id="J-alipay-treaty" href="https://memberprod.alipay.com/account/reg/index.htm#" class="ft-grey" target="_blank" seed="JIndexForm-JAlipayTreaty" smartracker="on">支付宝服务协议</a></label>
+            </div>
+            <div class="ui-form-item">        
+				<div id="submitBtn" class="ui-button ui-button-lorange">
+					<input id="J-submit" type="submit" class="ui-button-text" value="下一步" seed="submitBtn-JSubmit" smartracker="on" data-validatorflag="true" data-agreeflag="true">
+				</div>
+				<span class="ui-form-confirm"><span class="loading-text fn-hide">正在提交信息</span></span>
+            </div>   
+          
+        </fieldset>
+    </form>
+
+</div>
+<script type="text/javascript">
+	var _sdomain = document.domain.match(/(alipay.*)/)[0];
+	document.domain = _sdomain;
+</script>
+</div>
+<style type="text/css">
+    #footer{
+        background:#f4f4f4;
+        border-top: 2px solid #E9E9E9;
+    }
+	#footer h2{
+        margin: 25px 225px;
+    }
+</style>
+<footer id="footer" class="footer-personal">
+<div class="grid-780 about fn-clear">
+	<h2>注册支付宝，开启支付新旅程</h2>
+	<div id="easy" class="about-item">
+		<h3 class="title">支付通畅无阻</h3>
+		<span class="explain">100+家合作银行</span>
+	</div>
+
+	<div id="safety" class="about-item">
+		<h3 class="title">网购安心无忧</h3>
+		<span class="explain">3大安全保障</span>
+	</div>
+
+	<div id="home" class="about-item about-item-last">
+		<h3 class="title">在家也能缴费还款</h3>
+		<span class="explain">35个生活应用</span>
+	</div>
+	
+	<!-- CMS:支付宝全站/全站底部/alipay_foot_copyright_vm开始:alipay/foot/copyright.vm --><style>
+.copyright,.copyright a,.copyright a:hover{color:#808080;}
+</style>
+<div class="copyright">
+  支付宝版权所有 2004-2013 
+  <a href="https://i.alipayobjects.com/e/201201/2PFHAJCn91.jpg" target="_blank" seed="copyright-link" smartracker="on">ICP证：浙B2-20100257</a>
+</div>
+<div class="server" id="ServerNum">
+  memberprod-70-4 &nbsp; d3fbe457-6177-470e-99f1-8c2a30151db8
+</div><!-- CMS:支付宝全站/全站底部/alipay_foot_copyright_vm结束:alipay/foot/copyright.vm --></div>
+</footer>
+	<script type="text/javascript" charset="utf-8">
+		var araleConfig = {
+		combo_host: 'https://a.alipayobjects.com',
+		combo_path: '/ar/??',
+		//头像上传的host
+		avatar_host: 'https://tfsimg.alipay.com'
+		}
+	</script>
+	<script type="text/javascript" charset="utf-8" src="./注册 - 支付宝_files/arale.core-1.1.js"></script>
+
+	
+	<script type="text/javascript">
+//定义validator全局变量
+var re_validator;
+
+seajs.use(['autocomplete/0.8.0/autocomplete','alipay/xbox/0.9.7/xbox','alipay/pop-validator/1.0.0/pop-validator','$','select/0.9.0/select'], function(AutoComplete,Xbox,Validator,$,Select) {
+	//ajax会报错，用jQuery代替
+	var jQuery = $;
+
+	$(function(){
+		
+		//自动补全——邮箱后缀数据
+		var autoCompleteData = [
+	        'qq.com',
+	        '163.com',
+	        '126.com',
+	        'yahoo.cn',
+	        'sina.com',
+	        'hotmail.com',
+	        'gmail.com',
+	        'sohu.com',
+	        'yahoo.com.cn',
+	        '21cn.com'
+	    ];
+
+	    //自动补全实例化	    
+	    new AutoComplete({
+	        trigger: '#J-accName',
+	        submitOnEnter:false,
+	        dataSource: function(query) {
+	        	//输入源去除@
+	        	query = query.replace(/^([^@]*)@.*$/,'$1');
+	        	//定义结果数据
+	        	var autoCompleteResult = [];
+	        	//如果只有数字，在第一条插入输入的数字
+	        	if(!query.match(/[^0-9]/)){
+					autoCompleteResult.push(query);
+	        	}
+	        	//拼装数据源
+	        	for(i in autoCompleteData){
+					var mail = i;
+					autoCompleteResult.push(query + '@' + autoCompleteData[mail]);
+				}
+	            return autoCompleteResult;
+	        },
+	        filter: function(data, query){
+	        	//是否结果是空
+	        	var empty = false;
+	        	//定义最终展现数据
+        	    var result = [];
+	        	jQuery.each(data,function(index, value){
+	        		//如果输入的邮箱已经和结果中的某一项匹配了，就可以不展示下拉
+		        	if(query.indexOf("@") > -1 && value == query){
+			        	empty = true;
+			        //把匹配的数据条目拼装给结果
+		        	}else if(value.indexOf(query) > -1){
+				       	result.push({"value":value});
+		        	}
+	        	});
+		        if(empty){
+			        return [];
+		        }else{
+			        return result;
+		        }
+	        }
+		}).render();
+
+		//预设账户名输入框
+		var accNameInput = $("#J-accName");
+		//预设校验码输入框
+		var checkcodeInput = $("#J-checkcode");
+		//预设按钮
+		var submitInput = $("#J-submit");
+		submitInput.attr("data-validatorFlag","true");
+		submitInput.attr("data-agreeFlag","true");
+
+		//Validator初始化	
+		var validator = new Validator({
+			element: '#J-index-form',
+			checkNull:false,
+			showMessage: function(message, element) {
+				this.getItem(element).removeClass(this.get('itemErrorClass')).removeClass(this.get('itemSuccessClass')).removeClass(this.get('itemWarnClass')).removeClass(this.get('itemProblemClass'));
+				if(element.attr("data-showWarn")){
+					this.getItem(element).addClass(this.get('itemWarnClass'));
+				}else{
+					this.getItem(element).addClass(this.get('itemErrorClass'));
+				}          		
+				this.popMsgShow({
+					el : element,
+					msg : message
+				});
+				//重新检测的处理
+				if($("#reCheck")[0]){
+					$("#reCheck").click(function(e){
+						re_validator.query("#J-accName").execute();
+						e.preventDefault();
+					});
+				}
+			},
+			hideMessage: function(message, element) {
+				var data_explain = element.attr("data-explain") || "";
+				if(data_explain != "" && !element.parents(".ui-form-item").hasClass("ui-form-item-focus")){
+					this.popMsgHide({
+						el : element
+					});
+				}
+				var successMsg = this.query(element).get("successMsg");
+				if(typeof successMsg != "undefined" && !element.is(":focus")){
+					this.getItem(element).removeClass(this.get('itemErrorClass')).removeClass(this.get('itemSuccessClass')).removeClass(this.get('itemWarnClass')).removeClass(this.get('itemProblemClass')).addClass(this.get('itemSuccessClass'));
+					this.popMsgShow({
+						el : element,
+						msg : successMsg
+					});
+				}           
+			},			
+			onItemValidate:function(element){
+				if(element.attr("id") == "J-accName"){
+					element.val(jQuery.trim(element.val()));
+				}
+			}
+		});
+		re_validator=validator;
+
+		//新加规则
+		var accName=Validator.getRule('email').or('mobile');
+		Validator.addRule('accName',accName,'支付宝账户名是邮箱地址或手机号码。');
+		Validator.addRule('checkcode',/^.{4}$/,'验证码不正确，请重新输入。');
+		Validator.addRule("state",function(options,commit){
+			var state=jQuery.trim(options.element.val());
+			if (state=="QS") {
+				commit(true, "请选择国家或地区。");
+            }else{
+                	commit(null);
+            }
+		});
+		Validator.setMessage('email', '支付宝个人（港澳台/海外）账户名只支持电子邮箱。');
+
+		Validator.addRule('ajaxCheckUserName',function(options,commit){
+			validator.popMsgHide({
+				el : options.element
+			});
+			jQuery.ajax({
+				type	: 'POST',
+				url		:'/account/reg/acctStatusCheck.json',
+				data	:{	accName : $('#J-accName').val() },
+				timeout :10000,
+				success	:function(msg){
+
+					var stat = msg.stat;
+					var accName = msg.info.accName;
+					var accStatus = msg.info.accStatus;
+					var accType = msg.info.accType;
+					var country = msg.info.country;
+					var logonType = msg.info.logonType;
+					var nick = msg.info.nick;
+					var totalLimit = msg.info.totalLimit;
+                    var havanaId = msg.info.havanaId;
+					//var sites = msg.info.sites;
+
+					ajaxAccNameDisplay(nick,accStatus,accType,country,logonType,totalLimit,accName,havanaId,commit,options.element);
+				},
+				failure:function(msg){
+					var popMsg = '抱歉，系统忙，暂无法检测此账户名是否可用。<a href="#" id="reCheck">重新检测</a>';
+					var popType = 'warn';
+					ajaxCommit(popType,popMsg,commit,options.element);
+				}
+			})
+		});
+
+		Validator.setMessage("required","{{please}}"+"{{display}}。");
+
+		//帐户名Validator验证
+
+		validator.addItem({
+			element: '#J-accName',
+			required: true,
+			rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} accName ajaxCheckUserName',
+			display: "支付宝账户名"
+		});
+
+		//验证码Validator验证
+		validator.addItem({
+			element: '#J-checkcode',
+			required: true,
+			display: "验证码",
+			rule: 'required{"please":"请输入"} checkcode',
+			position:$('#J-checkcode-img')
+		});
+		
+		var country1,country2;
+
+		//区域select初始化
+		if($("#country-1")[0]){
+
+			country1 = new Select({
+				trigger:'#country-1',
+				classPrefix:'ui-select'
+			}).on('change',function(target){
+				//首先隐藏错误提示
+				validator.popMsgHide({
+                		el:$("#country-1")
+        			});
+				if(target.attr("data-value") == ""){
+					$("#country").val(country2.element.find("[data-selected='true']").attr("data-value"));
+					$(".ui-select-trigger:eq(1)").removeClass("fn-hide");				
+				}else{
+					$("#country").val(target.attr("data-value"));
+					$(".ui-select-trigger:eq(1)").addClass("fn-hide");
+				}
+				if(target.attr("data-value") == "CN"){
+					//换提示
+					accNameInput.attr({"placeholder":"输入手机号码或电子邮箱","data-explain":"输入的手机号码或电子邮箱将作<br />为账户名。"});
+					//换绑规则
+					validator.removeItem("#J-accName");
+					validator.addItem({
+						element: '#J-accName',
+						required: true,
+						rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} accName ajaxCheckUserName',
+						display: "支付宝账户名"
+					});
+				}else if(target.attr("data-value") == "QS"){//如果是请选择
+					//换提示
+					accNameInput.attr({"placeholder":"输入手机号码或电子邮箱","data-explain":"输入的手机号码或电子邮箱将作<br />为账户名。"});
+					//换绑规则
+					validator.removeItem("#J-accName");
+					validator.addItem({
+						element: '#J-accName',
+						required: true,
+						rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} ajaxCheckUserName',
+						display: "支付宝账户名"
+					});						
+				}else{
+					//换提示
+					accNameInput.attr({"placeholder":"输入电子邮箱","data-explain":"输入的电子邮箱将作为账户名。"});
+					//换绑规则
+					validator.removeItem("#J-accName");
+					validator.addItem({
+						element: '#J-accName',
+						required: true,
+						rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} email ajaxCheckUserName',
+						display: "支付宝账户名"
+					});
+				}
+			}).render();
+
+		}
+
+		//海外select初始化
+		if($("#country-2")[0]){
+			country2 = new Select({
+				trigger:'#country-2',
+				classPrefix:'ui-select'
+			}).on('change',function(target){
+				$("#country").attr("value",target.attr("data-value"));
+			}).render();
+		}
+		if ($("#country-1").size() > 0) {
+			validator.addItem({
+				element: '#country-1',
+				required: false,
+				errormessageRequired: '请选择国家或地区。',
+				rule:"state",
+				position: $('#country-1').next()
+			});
+		}
+		//XBOX初始化
+		var mobile_check_box = new Xbox({
+			content		: 'https://memberprod.alipay.com/account/reg/section/mobileCheck.htm?scene=mobileReg',
+			width		: 650
+		}).render().before('show',function(){
+			this.element.addClass("xbox-hideClose");
+		});
+		var email_check_box = new Xbox({
+			content		: 'https://memberprod.alipay.com/account/reg/section/emailCheck.htm',
+			width		: 650
+		}).render().before('show',function(){
+			this.element.addClass("xbox-hideClose");
+		});
+		var agreement_box = new Xbox({
+			trigger: "#J-alipay-treaty",
+			content: 'https://memberprod.alipay.com/account/reg/section/agreement.htm',
+			width: 500
+		}).render().before('show',function(){
+			this.element.addClass("xbox-hideClose");
+		});
+
+		//Ajax回调处理后的显示
+		function ajaxCommit(popType,popMsg,commit,element){
+			if(popType == "error"){
+				element.removeAttr("data-showWarn");
+				submitInput.attr("data-validatorFlag","false");
+				letBtnGrey();
+				commit(true,popMsg);
+			}else if(popType == "warn"){
+				element.attr("data-showWarn","true");
+				submitInput.attr("data-validatorFlag","false");
+				letBtnGrey();
+				commit(true,popMsg);
+			}else if(popType == "success"){
+				element.removeAttr("data-showWarn");
+				validator.query(element).set("successMsg",popMsg);
+				submitInput.attr("data-validatorFlag","true");
+				letBtnBack();
+				commit(null);
+			}
+		}
+
+		//设置国家
+		function selectCountry(country){
+			if(country==""){country="CN"}
+			if(country=="CN" || country=="TW" || country=="HK" || country=="MO" ){
+				country1.select("li[data-value='"+country+"']");
+				$(".ui-select-trigger:eq(1)").addClass("fn-hide");
+			}else if(country=="KR" || country=="JP" || country=="SG" || country=="MY" ){
+				country1.select("li[data-value='']");
+				country2.select("li[data-value='"+country+"']");
+				$(".ui-select-trigger:eq(1)").removeClass("fn-hide");
+			}
+			$("#country").val(country);
+		}
+
+		//使按钮变灰
+		function letBtnGrey(){
+			if(submitInput.attr("data-validatorFlag") == "false" || submitInput.attr("data-agreeFlag") == "false"){
+				$("#J-submit").attr("disabled","disabled");
+				$("#J-submit").parent().addClass("ui-button-ldisable").removeClass("ui-button-lorange");
+			}		
+		}
+
+		//使按钮正常
+		function letBtnBack(){
+			if(submitInput.attr("data-validatorFlag") == "true" && submitInput.attr("data-agreeFlag") == "true"){
+				$("#J-submit").removeAttr("disabled");
+				$("#J-submit").parent().removeClass("ui-button-ldisable").addClass("ui-button-lorange");
+			}
+		}
+
+		//国家码映射
+		function getCountry(countryCode){
+			switch (countryCode){
+				case "CN":
+					return "中国大陆";
+				break;
+				case "TW":
+					return "台湾";
+				break;
+				case "HK":
+					return "香港";
+				break;
+				case "MO":
+					return "澳门";
+				break;
+				case "KR":
+					return "韩国";
+				break;
+				case "JP":
+					return "日本";
+				break;
+				case "SG":
+					return "新加坡";
+				break;
+				case "MY":
+					return "马来西亚";
+				break;
+				default:
+					return "";
+			}					
+		}
+
+		//帐户名AJAX验证按条件回显处理
+		function ajaxAccNameDisplay(nick,accStatus,accType,country,logonType,totalLimit,accName,havanaId,commit,element){
+			var popMsg;
+			var popType;
+
+			//国家中文名
+			if(country!=""){
+				var countryChinaeseName="（"+getCountry(country)+"）";
+			}else{
+				country="CN";
+				var countryChinaeseName="（中国大陆）";
+			}
+
+			//根据不同的accStatus显示不同的提示信息
+			if(accStatus=="login"){
+				window.Tracker && Tracker.click("login");
+				popMsg='此账户已注册支付宝，<a href=\'https://auth.alipay.com/login/index.htm?logonId='+accName+'\' titile="立即登录" target="_blank" seed="signInNow">立即登录</a>';
+				popType = 'warn';
+			}else if(accStatus=="loginq"){
+				window.Tracker && Tracker.click("warn");
+				popMsg= '您已是支付宝会员，但账户信息不完整，请 <a href=\'https://auth.alipay.com/login/index.htm?logonId='+accName+'&goto=https://lab.alipay.com/user/reg/complete/finishRegister.htm\' titile="登录" target="_blank" seed="signIn">登录</a> 后补全，享受更多服务。';	
+				popType = 'warn';
+			}else if(accStatus=="available"){
+				window.Tracker && Tracker.click("available");
+				popMsg ='<span class="ft-white">ok</span>';	
+				popType = 'success';
+			}else if(accStatus=="havanatemp"){
+				popMsg = '此账户名被阿里巴巴集团的其他账户占用，且未完成注册，请<a href=\'https://passport.alipay.com/register/continue.htm?hid='+havanaId+'\' target="_blank" seed="havanatemp_continue">继续注册</a>。';
+				popType = 'warn';
+			}else if(accStatus=="aliuserexist"){
+				popMsg = '此账户名注册过阿里巴巴集团的其他账户，暂不支持注册支付宝，请重新输入。';
+				popType = 'warn';
+			}else if(accStatus=="unsupportedcountry"){
+				window.Tracker && Tracker.click("unsupportedcountry");
+				popMsg = '抱歉，暂不支持该账户补全信息。建议更换其他邮箱或手机号重新注册。';
+				popType = 'warn';
+			}else if(accStatus=="taobaouser"){
+				window.Tracker && Tracker.click("taobaouser");
+				popMsg = '您在注册淘宝<span class="ft-orange">（'+nick+'）</span>时同步创建了此支付宝账户。<a href=\'https://login.taobao.com/member/login.jhtml?from=alipay&goto=https%3A%2F%2Flab.alipay.com%2Fuser%2Freg%2Fcomplete%2FfinishRegister.htm\' target="_blank" seed="taobaoUserSignIn">淘宝账户登录</a>';
+				popType = 'warn';
+			}else if(accStatus=="activate" && accType == "2"){
+				if($("#country").val() == country){
+					window.Tracker && Tracker.click("activate2_success");
+					popMsg = '<span class="ft-white">ok</span>';
+					popType = 'success';
+				}else{
+					window.Tracker && Tracker.click("activate2_warn");
+					popMsg = '您已是支付宝个人'+countryChinaeseName+'会员，但账户信息不完整，请<a seed="personal_continue" href=\'https://memberprod.alipay.com/account/reg/index.htm?accName='+accName+'&country='+country+'\'>继续注册</a>，享受更多服务。';
+					popType = 'warn';
+				}
+			}else if(accStatus=="activate" && accType == "1"){
+				window.Tracker && Tracker.click("activate1");
+				popMsg = '您已是支付宝企业会员，但账户信息不完整，请<a seed="enterprise_continue" href=\'https://memberprod.alipay.com/account/reg/enterpriseIndex.htm?accName='+accName+'\'>继续注册</a>，享受更多服务。';
+				popType = 'warn';
+			}else if(accStatus=="activatenotalipayq" && accType == "2"){
+				if($("#country").val() == country){
+					window.Tracker && Tracker.click("activatenotalipayq2_success");
+					popMsg = '您已是支付宝会员，但账户信息不完整，请继续注册，享受更多服务。';
+					popType = 'success';
+				}else{
+					window.Tracker && Tracker.click("activatenotalipayq2_warn");
+					popMsg = '您已是支付宝个人'+countryChinaeseName+'会员，但账户信息不完整，请<a seed="personal_notalipay_continue" href=\'https://memberprod.alipay.com/account/reg/index.htm?accName='+accName+'&country='+country+'\'>继续注册</a>，享受更多服务。';
+					popType = 'warn';
+				}	
+			}else if(accStatus=="activatenotalipayq" && accType == "1"){
+				window.Tracker && Tracker.click("activatenotalipayq1");
+				popMsg = '您已是支付宝企业会员，但账户信息不完整，请<a seed="enterprise_notalipay_continue" href=\'https://memberprod.alipay.com/account/reg/enterpriseIndex.htm?accName='+accName+'\'>继续注册</a>，享受更多服务。';
+				popType = 'warn';
+			}else if(accStatus=="exceedlimit"){
+				window.Tracker && Tracker.click("exceedlimit");
+				popMsg = '今天此手机号码已接收'+totalLimit+'次短信校验码，请更换手机号码/电子邮箱或明天再试。';
+				popType = 'warn';
+			}else if(accStatus=="invalid"){
+				window.Tracker && Tracker.click("invalid");
+				popMsg = '支付宝账户名是邮箱地址或手机号码。';
+				popType = 'error';
+			}else if(accStatus=="forbidden"){
+				window.Tracker && Tracker.click("forbidden");
+                if(logonType=="MOBILE"){var text="手机号码";}else if(logonType=="EMAIL"){var text="电子邮箱";}
+				popMsg = '此'+text+'暂不支持作为账户名，请更换';
+				popType = 'error';
+			}
+			/*
+			 * 阿里账户这期不上
+			 else if(accStatus=="aliusers"){
+			 var str = '',type;
+			 if(logonType=="MOBILE"){var text="手机号码";}else if(logonType=="EMAIL"){var text="电子邮箱";}
+			 if(sites == ""){
+			 str = '抱歉，该'+text+'不能注册支付宝，请更换其他电子邮箱或手机号注册。';
+			 }else if(sites.indexOf(",") < 0){
+			 str = '此'+text+'已注册过'+ALIUSERS[sites].show+'，请 '+'<a class="J-xbox" seed="login-type-'+sites+'" href="'+ALIUSERS[sites].loginUrl+'">登录'+ALIUSERS[sites].show+'</a>'+' 快速成为支付宝会员。';
+			 }else{
+			 str = '此'+text+'已注册过以下网站，选择任一登录，快速成为支付宝会员。';
+			 str +='<ol class="aliusers-list fn-clear">'
+			 var sitesArr = sites.split(",");
+			 for(var i = 0; i<sitesArr.length;i++){
+			 type = sitesArr[i];
+			 str +='<li>';
+			 str +='<a seed="login-type-'+type+'" class="J-xbox" href="'+ALIUSERS[type].loginUrl+'">'
+			 str += '<i class="ui-ali-icons ui-ali-icons-'+type+'"></i>';
+			 str += ALIUSERS[type].show;
+			 str +='</a>';
+			 str +='</li>';
+			 }
+			 str +='</ol>';
+			 }
+			 popMsg=str;
+			 popType = 'warn';
+			 }
+			 */
+			else{
+                window.Tracker && Tracker.click("cannotCheck");
+				if(logonType=="MOBILE"){var text="手机号码";}else if(logonType=="EMAIL"){var text="电子邮箱";}
+				popMsg = '抱歉，系统忙，暂无法检测此'+text+'是否可用作账户名。<a href="#" id="reCheck">重新检测</a>';
+				popType = 'warn';
+			}
+
+			ajaxCommit(popType,popMsg,commit,element);
+		}
+
+		//消除黄色报错标识
+		$("#J-accName").focus(function(){
+			$(this).removeAttr("data-showWarn");
+		});
+
+		//是否同意协议事件处理
+		$("#J-agree").click(function(){
+			if($(this).attr("checked")){
+				submitInput.attr("data-agreeFlag","true");
+				letBtnBack();
+			}else{
+				submitInput.attr("data-agreeFlag","false");
+				letBtnGrey();	
+			}
+		});
+
+		//图片验证码点击，换验证码，清内容，focus
+		$("#J-checkcode-img").click(function(){
+			var src=$(this).attr("src");
+			src = src.substring(0, src.indexOf("r=")+2)
+			$(this).attr("src",src+Math.random());
+			checkcodeInput.val("").trigger("focus");
+		});
+
+		//做后端返回页面的情况
+
+		//隐藏第二个地区选择框，如果回传时选择的是海外，还得换绑帐户名规则
+		if($("#country-1").val() != ""||$("#country-1 option:selected").text() == "请选择"){
+			$(".ui-select-trigger:eq(1)").addClass("fn-hide");
+		}
+		if($("#country-1").val() != "CN"){
+			//如果是请选择的情况
+			if($("#country-1").val() == "QS"){
+				//换提示
+				accNameInput.attr({"placeholder":"输入手机号码或电子邮箱","data-explain":"输入的手机号码或电子邮箱将作<br />为账户名。"});
+				//换绑规则
+				validator.removeItem("#J-accName");
+				validator.addItem({
+					element: '#J-accName',
+					required: true,
+					rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} ajaxCheckUserName',
+					display: "支付宝账户名"
+				});				
+			}else{
+				//换提示
+				accNameInput.attr({"placeholder":"输入电子邮箱","data-explain":"输入的电子邮箱将作为账户名。"});
+				//换绑规则
+				validator.removeItem("#J-accName");
+				validator.addItem({
+					element: '#J-accName',
+					required: true,
+					rule: 'required{"please":"请输入"} minlength{"min":4} maxlength{"max":100} email ajaxCheckUserName',
+					display: "支付宝账户名"
+				});				
+			}
+		}
+
+		var accCheck = "";
+
+		if(accCheck == "mobileCheck"){
+			mobile_check_box.show();
+		}else if(accCheck == "emailCheck"){
+			email_check_box.show();
+		}else{
+			//发起帐户名校验
+			if(jQuery.trim(accNameInput.val())){
+				accNameInput.val(jQuery.trim(accNameInput.val()));			
+				if(accNameInput.val() != ""){
+					function getUrlParam(name)
+					{
+						var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+						var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+						if (r!=null) return unescape(r[2]); return ""; //返回参数值
+					}
+					var countryInit = getUrlParam("country");
+					selectCountry(countryInit);
+					validator.query('#J-accName').execute();
+				}
+			}
+		}
+
+		//处理后端报错
+		validator.renderDataError();
+
+		//阿里账户xbox,阿里账户这期不上
+		/*
+		   $("body").click(function(e){
+		   var target = $(e.target);
+		   if(target.get(0).tagName.toLowerCase() != "a"){
+		   var link = target.parents("a");
+		   if(link && link.hasClass('J-xbox')){
+		   target = link;
+		   }
+		   }
+		   if(!target.hasClass('J-xbox')){
+		   return true;
+		   }
+		   e.preventDefault();
+		   var login_xbox = new Xbox({
+content	: function(){
+var href = target.attr('href');
+href += "&loginId=" + encodeURIComponent($('#J-accName').val());
+href += "&accType=" + "";
+window.Tracker && Tracker.click(ele.attr('seed'));
+return href;
+}
+}).render().before('show',function(){
+this.element.addClass("xbox-hideClose");
+});
+login_xbox.show();
+});
+*/
+
+		});
+});
+</script>
+<script type="text/javascript">
+/**
+ *
+ * 实时校验码模块
+ *
+ * @author 定风波
+ * @create 2012-09-07
+ */
+seajs.use(['$'], function($) {
+
+    var jQuery = $;
+
+    $(function() {
+
+        var realtimeCheckcode = {
+
+            //当前所在的表单
+            form: null,
+
+            //checkcodeServer地址
+            checkcodeServer: "/account/reg/picCheckCode.json",
+
+            //验证码的dom
+            checkcode: null,
+
+            //验证码的icon图标dom
+            checkcodeIcon: null,
+
+            //结果变量
+            result: false,
+
+            //统计发送请求的次数
+            count: 0,
+
+            //统计错误的次数
+            errorCount: 0,
+
+            //设置超时时间
+            timeout: 2000,
+
+            //设置实时校验码超时时间为9分钟（保险起见，实时校验码的失效时间比session少1分钟）:
+            invalidTime: 1000 * 60 * 9,
+
+            //记录初始化时间:
+            initialTime:new Date().getTime(),
+
+            //标识当前页面停留时间:
+            nowTime:null,
+
+            //判断是否超时:
+            isInvalid:false,
+
+            //标识此时是否在校验,如果用户点击刷新，则阻断上次校验；
+            isChecking:false,
+
+            //标识当前已经校验过的数据,避免用户输入4位数后继续点击键盘重复校验相同值；
+            nowValue:null,
+
+            //表单提交的方法,这个变量同时标识当前用户是否点击过提交按钮
+            formSubmit_: null,
+
+            //初始化事件,赋予变量值
+            init: function() {
+                //form使用的是原生的表单
+                this.form = $('form')[0];
+                this.checkcode = $('#J-checkcode');
+                this.checkcodeIcon = $('#checkcodeIcon');
+            },
+
+            //异步请求的方法
+            request: function(value) {
+                var that = this;
+                //发起请求之前先重置一次；
+                that.checkReset();
+
+                that.count++;
+
+                that.nowTime = new Date().getTime();
+
+                //判断当前是否页面停留时间超过10分钟，如果超过10分钟，则失效，不进行实时校验
+                that.isInvalid = that.nowTime - that.initialTime > that.invalidTime ? true : false ;
+
+                //如果请求数超过5次的话，不再去发请求 ||如果当前时间超过10分钟，也不再去发请求
+                if (that.count > 5 || that.isInvalid) return;
+                //标识用户当前在发送实时校验码校验;
+                that.isChecking = true;
+
+                //用户当前进行校验的值;
+                that.nowValue = value;
+
+                jQuery.ajax({
+                    type	: 'POST',
+                    url		: that.checkcodeServer,
+                    data	: {checkCode : value,timestamp: new Date().getTime()},
+                    timeout: that.timeout,
+                    success: function(data) {
+                        that.successCallback(data);
+                    },
+                    failure: function() {
+                        that.failureCallback();
+                    }
+                });
+            },
+
+            //结果有返回的时候
+            successCallback: function(data) {
+                //如果此时用户已经点击刷新校验码，则阻止此次返回的结果显示；
+                if(!this.isChecking) return;
+                if (!data.stat) {
+                    this.checkTimeout();
+                }else{
+                    if (data.stat == "ok") {
+                        //返回结果正确，且用户已经点击过提交，则直接提交表单，并且显示正确的图标;
+                        if (this.formSubmit_) this.submitForm();
+                        //返回结果正确，但是用户没有点击过提交，则显示正确的图标，同时标识结果为正确;
+                        this.checkcodeIcon.addClass("checkcodeIcon-right");
+                        this.result = true;
+                    } else {
+                        //记录用户失败的次数
+                        this.errorCount++;
+                        //返回结果错误，显示错误的图标，并且focus到验证码框
+                        this.checkcodeIcon.addClass("checkcodeIcon-wrong");
+                        this.checkcode.trigger("focus");
+                        this.result = false;
+                        this.formSubmit_ = null;
+                    }
+                }
+            },
+
+            //结果超时或者接口挂了的时候
+            failureCallback: function() {
+                //如果此时用户已经点击刷新校验码，则阻止此次返回的结果显示
+                if(!this.isChecking) return;
+                //结果超时或者接口挂了，如果此时用户已经点击提交，则直接提交
+                if (this.formSubmit_) {
+                    this.submitForm();
+                } else {
+                    //结果超时或者接口挂了，用户没有点击提交，则标识结果为正确（允许用户点击提交的时候直接提交表单)
+                    this.checkTimeout();
+                }
+            },
+
+            //接口超时或者接口不可用的情况下,默认都为true，防止因为实时校验码影响到登录功能
+            checkTimeout: function() {
+                this.result = true;
+            },
+
+            //重置实时校验码的功能,标识校验码结果为false,同时标识用户没有点击过提交按钮
+            checkReset: function() {
+                this.checkcodeIcon.removeClass("checkcodeIcon-right");
+                this.checkcodeIcon.removeClass("checkcodeIcon-wrong");
+                this.result = false;
+                this.formSubmit_ = null;
+                //当校验码没有返回的时候用户点击刷新验证码，则标识用户没有在校验
+                this.isChecking = false;
+                //清空用户用于校验的值
+                that.nowValue = null;
+            },
+
+            //提交表单切面
+            submitAspect: function() {
+                var submit_ = this.form.submit;
+                that = this;
+                this.form.submit = function() {
+                    that.formSubmit_ = submit_;
+
+                    //先判断是否已经校验过5次,校验过5次之后不再去校验,直接提交表单 || 判断页面是否超时，如果超时也提交
+                    if (that.count > 5 || that.isInvalid) {
+                        that.submitForm();
+                    } else {
+                        //判断实时校验码标识的结果
+                        if (that.result) {
+                            //标识符为true，提交表单
+                            that.submitForm();
+                        } else {
+                            //如果当前用户没有进行实时校验（当输入第四位的keyup的同时blur掉，则不会执行keyup事件），点击提交，会去发一次校验；
+                            if(that.checkcode.val() != that.nowValue){
+                                that.request(that.checkcode.val());
+                            }else{
+                                //标识符为false，把按钮恢复，首页定制的;
+                                var indexSubBtn = $("#J-submit");
+                                indexSubBtn.removeAttr("disabled");
+                                if($("#J-index-form")[0]){
+                                    indexSubBtn.parent().addClass("ui-button-lorange").removeClass("ui-button-ldisable");
+                                }else{
+                                    indexSubBtn.parent().addClass("ui-button-lblue").removeClass("ui-button-ldisable");
+                                }
+                                indexSubBtn.parent().next().find(".loading-text")[0] && indexSubBtn.parent().next().find(".loading-text").addClass("fn-hide");
+
+                                //标识符为false，focus验证码框;
+                                that.checkcode.trigger("focus");							
+                            }
+                        }
+                    }
+
+                };
+            },
+
+            //直接提交表单的方法，方法会先判断用户是否有点击过提交表单的按钮，没点击过不会提交
+            submitForm: function() {
+                var submit_ = this.formSubmit_;
+                if (!submit_) return;
+                try {
+                    submit_();
+                } catch (e) {
+                    submit_.call(that.form);
+                }
+            },
+
+            //监听去空格逻辑中发出来的事件，在去空格之后判断输入验证码的长度
+            bindEvent: function() {
+                var that = this;
+                this.checkcode.keyup(function(){
+                    $(this).val(jQuery.trim($(this).val()));
+                    var value = $(this).val();
+                    /*
+                     *如果验证码输入长度小于4位，重置实时校验码功能;		
+                     */
+                    if (value.length < 4) {
+                        that.checkReset();
+                    } else if (value.length == 4) {
+                        //如果当前用户进行校验的值和上一个值相同，则不校验,避免出现用户输满4个字符后点击键盘其他字符发起的重复校验；
+                        if(value != that.nowValue) that.request(value);
+                    }
+                });
+
+                $("#J-checkcode-img").click(function(){
+                    //重置实时校验码
+                    that.checkReset();
+                });
+
+            }
+        }
+        realtimeCheckcode.init();
+        realtimeCheckcode.bindEvent();
+        realtimeCheckcode.submitAspect();
+    });
+});
+</script>
+
+<!-- CMS:会员产品系统/注册/尾部公用用来临时修复问题开始:memberprod/reg/fixbug.vm --><!-- CMS:会员产品系统/注册/尾部公用用来临时修复问题结束:memberprod/reg/fixbug.vm -->
+
+ 
+<!-- uitpl:/component/tracker.vm -->
+<!-- CMS:支付宝全站/监控埋点/tracker js引用开始:alipay/tracker/tracker.vm -->
+
+<script type="text/javascript" charset="utf-8" src="./注册 - 支付宝_files/saved_resource(2)"></script>
+
+<script type="text/javascript">
+if(window.seajs){
+seajs.use("$", function($){
+  $(function(){
+    // 命中率：[0,1]: 实际对应采样率：[0%,100%]
+	// 注意：sens_rate 跟 sens_rate 是有关联的。
+	//      实际设置的内容时，应该参考以下算法：
+	//      敏感信息监控实际采样率 = sens_rate * jserr_rate;
+    var jserr_rate = 0.1;
+	var sens_rate = 0.1;
+
+    /**
+     * 随机采样命中算法。
+     * @param {Nuber} rate, 采样率，[0,1] 区间的数值。
+     * @return {Boolean}
+     */
+    function hit(rate){
+      return 0 === Math.floor(Math.random() / rate);
+    }
+	  
+    if(!hit(jserr_rate)){return;}
+	seajs.use("alipay/monitor/2.0.0/monitor", function(monitor){
+	  if(!monitor || !monitor.boot){return;}
+      monitor.boot(); // 启动监控。
+
+      if(!hit(sens_rate)){return;}
+      seajs.use("alipay/sensinfo/1.1.0/sensinfo", function(sensinfo){
+        if(!sensinfo){return;}
+        try{
+          var html = (document.body || document.documentElement).innerHTML;
+	      sensinfo.scan(html);
+        }catch(ex){}
+
+      });
+	});
+
+  });
+});
+}
+</script>
+
+
+
+<!-- CMS:支付宝全站/cmsbuffer/main开始:alipay/cmsbuffer/main.vm -->																	
+	
+<!-- CMS:支付宝全站/cmsbuffer/main结束:alipay/cmsbuffer/main.vm --><!-- CMS:支付宝全站/监控埋点/tracker js引用结束:alipay/tracker/tracker.vm -->
+
+
+
+
+
+<!-- CMS:支付宝全站/全站底部/alipay_foot_onlineServiceNew_vm开始:alipay/foot/onlineServiceNew.vm -->
+
+
+
+                                                                                                                                                                                                                                                                            
+    <!-- CMS:支付宝全站/全站底部/在线客服新埋点区块开始:alipay/foot/cliveService.vm --><div style="display:none">onlineServer</div>
+<script type="text/javascript">
+try {
+    function loadOnlineServer() {
+        seajs.config({
+            comboExcludes: /\/u\/(js|css)\//,
+            alias: {
+                'onlineServerConfig': 'https://a.alipayobjects.com/u/js/201307/jAyRmnpyv.js',//老配置加载（服务端生成）
+                'portalServerConfig': 'https://a.alipayobjects.com/u/js/201307/io934cg1V.js',//新配置加载（服务端生成）
+                'onlineServerJS': 'https://a.alipayobjects.com/u/js/201305/KZROBjq7L.js',//云客服窗口事件 精确，模糊，排除匹配URL
+                'onlineServerCSS': 'https://a.alipayobjects.com/u/css/201304/BYLrWZ40T.css'//云客服通用样式
+            }
+        });
+
+        seajs.use(['onlineServerConfig', 'portalServerConfig'], function(){
+            jQuery(function(){
+                window.OS = {},
+                OS = window.OS,
+                OS.server = {
+                    cliveServer: 'https://clive.alipay.com',
+                    cschannelServer: 'https://cschannel.alipay.com'
+                }
+                if (window.ONLINESERVERCONFIG) {
+                    OS.config = {
+                        //在线客服地址
+                        onlineServerURL: OS.server.cliveServer + '/csrouter.htm',
+                        //在线客服分流地址
+                        portalServerURL: OS.server.cschannelServer + '/csrouter.htm',
+                        //在线客服默认图片
+                        onlineServerIconDefault: 'https://i.alipayobjects.com/e/201304/9TkA5fb4f.png'
+                    };
+                    seajs.use('onlineServerCSS');
+                    seajs.use('onlineServerJS');
+                }
+            });
+        });
+    }
+    //window.onload
+    var bind = function(func){
+        w = window;
+        if (w.attachEvent) {
+            w.attachEvent('onload', func);
+        } else {
+            w.addEventListener('load', func, false);
+        }
+    };
+    //seajs载入
+    bind(function() {
+        w = window, o = 'seajs', d = document;
+        if(w[o]) { return loadOnlineServer() }
+        s = d.createElement("script")
+        s.id = o + "node"
+        s.charset = "utf-8";
+        s.type = "text/javascript";
+        s.src = "https://a.alipayobjects.com/??seajs/1.3.1/sea.js,jquery/jquery/1.7.2/jquery.js";
+        head = d.head || d.getElementsByTagName( "head" )[0] || d.documentElement;
+        head.appendChild(s);
+        s.onload = s.onreadystatechange = function(){ if (!s.readyState || /loaded|complete/.test(s.readyState)) { loadOnlineServer() } };
+    })
+} catch (ex) {
+	if(window.console&&window.console.log){
+		console.log(ex);
+	}
+}
+</script><!-- CMS:支付宝全站/全站底部/在线客服新埋点区块结束:alipay/foot/cliveService.vm --><!-- CMS:支付宝全站/全站底部/alipay_foot_onlineServiceNew_vm结束:alipay/foot/onlineServiceNew.vm -->
+<!-- CMS:支付宝全站/全站底部/在线客服流量控制开始:alipay/foot/onlineServiceCtr.vm -->
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <script type="text/javascript">
+      try{
+                (function(){
+          var CookieUtil={get:function(b){var e=encodeURIComponent(b)+"=",a=document.cookie.indexOf(e),d=null;if(a>-1){var c=document.cookie.indexOf(";");if(c==-1){c=document.cookie.length}d=decodeURIComponent(document.cookie.substr(a+e.length,c))}return d},set:function(b,e,a,g,d,f){var c=encodeURIComponent(b)+"="+encodeURIComponent(e);if(a instanceof Date){c+="; expires="+a.toGMTString()}if(g){c+="; path="+g}if(d){c+="; domain="+d}if(f){c+="; secure"}document.cookie=c},unset:function(a,d,b,c){this.set(a,"",new Date(0),d,b,c)}};
+          try {
+                      var onlineService = document.getElementById('onlineService'), cookie = 'showOnlineService';
+                      var percent = '1';
+                    } catch (e) {
+                      var percent = 0;
+                    }
+                    percent = new Number(percent);
+                    if (onlineService) {
+                      onlineService.style.display = 'none';
+                      if (document.location.href.indexOf('memberprod.alipay.com/account/reg') > -1) {
+                        CookieUtil.set(cookie,'N',"",'/');
+                        if (Math.random() < percent) {
+                          CookieUtil.set(cookie,'Y',"",'/');
+                          onlineService.style.display = 'block';
+                        }
+                      } else {
+                        if (CookieUtil.get(cookie) == 'Y') {
+                          onlineService.style.display = 'block';
+                        }
+                      }
+                    }
+                  
+                })()
+            }catch(ex){
+            
+            }
+      </script>
+                    <!-- CMS:支付宝全站/全站底部/在线客服流量控制结束:alipay/foot/onlineServiceCtr.vm -->
+
+
+<div style="height: 0px; width: 0px; overflow: hidden;"><object width="0" height="0" style="height:0;width:0;overflow:hidden;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="JSocket"><param name="allowScriptAccess" value="always"><param name="movie" value="https://acjs.aliyun.com/flash/JSocket.swf"> <embed src="https://acjs.aliyun.com/flash/JSocket.swf" name="JSocket" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer_cn" width="0" height="0"></object></div><div class="ui-autocomplete" data-widget-cid="widget-1" style="z-index: 99; display: none;"><ul class="ui-autocomplete-ctn" data-role="items"></ul></div><div class="ui-select" data-widget-cid="widget-2" style="z-index: 99; display: none;"><ul class="ui-select-content" data-role="content"><li data-role="item" class="ui-select-item ui-select-selected" data-value="CN" data-defaultselected="true" data-selected="true">中国大陆</li><li data-role="item" class="ui-select-item" data-value="HK" data-defaultselected="false" data-selected="false">香港</li><li data-role="item" class="ui-select-item" data-value="MO" data-defaultselected="false" data-selected="false">澳门</li><li data-role="item" class="ui-select-item" data-value="TW" data-defaultselected="false" data-selected="false">台湾</li><li data-role="item" class="ui-select-item" data-value="" data-defaultselected="false" data-selected="false">海外</li></ul></div><div class="ui-select" data-widget-cid="widget-3" style="z-index: 99; display: none;"><ul class="ui-select-content" data-role="content"><li data-role="item" class="ui-select-item ui-select-selected" data-value="KR" data-defaultselected="true" data-selected="true">韩国</li><li data-role="item" class="ui-select-item" data-value="JP" data-defaultselected="false" data-selected="false">日本</li><li data-role="item" class="ui-select-item" data-value="SG" data-defaultselected="false" data-selected="false">新加坡</li><li data-role="item" class="ui-select-item" data-value="MY" data-defaultselected="false" data-selected="false">马来西亚</li></ul></div><div class="ui-xbox" data-widget-cid="widget-4" style="width: 650px; z-index: 1000; display: none; position: absolute; left: 0px; top: 0px;"><div class="ui-xbox-action" data-role="action"><a href="https://memberprod.alipay.com/account/reg/index.htm#" class="ui-xbox-close">×</a></div><div class="ui-xbox-content" data-role="content"><iframe src="javascript:''" scrolling="no" frameborder="no" allowtransparency="true" style="border: none; width: 100%; height: 100%;"></iframe></div></div><div class="ui-xbox" data-widget-cid="widget-5" style="width: 650px; z-index: 1000; display: none; position: absolute; left: 0px; top: 0px;"><div class="ui-xbox-action" data-role="action"><a href="https://memberprod.alipay.com/account/reg/index.htm#" class="ui-xbox-close">×</a></div><div class="ui-xbox-content" data-role="content"><iframe src="javascript:''" scrolling="no" frameborder="no" allowtransparency="true" style="border: none; width: 100%; height: 100%;"></iframe></div></div><div class="ui-xbox" data-widget-cid="widget-6" style="width: 500px; z-index: 1000; display: none; position: absolute; left: 0px; top: 0px;"><div class="ui-xbox-action" data-role="action"><a href="https://memberprod.alipay.com/account/reg/index.htm#" class="ui-xbox-close">×</a></div><div class="ui-xbox-content" data-role="content"><iframe src="javascript:''" scrolling="no" frameborder="no" allowtransparency="true" style="border: none; width: 100%; height: 100%;"></iframe></div></div><div id="onlineService" seed="online-service" data-sourceid="26"><a href="javascript:void(0)" seed="csc_kb_router_online"><img style="display: block;" src="./注册 - 支付宝_files/JoBiQN2eL.png"></a></div></body></html>

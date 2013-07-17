@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ShouxinServer.Controllers
 {
-    public class MainController : Controller
+    public class MainController : BaseController
     {
         //
         // GET: /Main/
@@ -16,7 +16,7 @@ namespace ShouxinServer.Controllers
 				"我的手信","账户管理",
 				"交易记录","会员保障","应用中心"
             };
-            return View();
+            return View(GetViewModel());
         }
     }
 }
