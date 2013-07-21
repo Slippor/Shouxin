@@ -1,40 +1,35 @@
-﻿@model ShouxinServer.Models.RegisterModel
+﻿@model ShouxinServer.ViewModels.RegisterViewModel
 @{
-    ViewBag.Title = "Register";
-    ViewBag.Css = "~/Content/css/Register";
+    ViewBag.Title = "注册";
 }
-
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>Create a new account.</h2>
-</hgroup>
-<div class="grid-780 box-shadow fn-clear">
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary()
-
-        <fieldset>
-            <legend>Registration Form</legend>
-            <ol>
-                <li>
-                    @Html.LabelFor(m => m.UserName)
-                    @Html.TextBoxFor(m => m.UserName)
-                </li>
-                <li>
-                    @Html.LabelFor(m => m.Password)
-                    @Html.PasswordFor(m => m.Password)
-                </li>
-                <li>
-                    @Html.LabelFor(m => m.ConfirmPassword)
-                    @Html.PasswordFor(m => m.ConfirmPassword)
-                </li>
-            </ol>
-            <div class="ui-form-item">
-                <input type="submit" value="Register" />
-            </div>
-        </fieldset>
-    }
+<div class="grid-990 product fn-clear">
+    <div class="ui-form ui-form-l ui-form-general">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+            <fieldset>
+                <legend>注册</legend>
+                <div class="ui-form-item">
+                    @Html.LabelFor(m => m.UserName, htmlAttributes: new { @class = "ui-label" })
+                    @Html.TextBoxFor(m => m.UserName, htmlAttributes: new { @class = "ui-input" })
+                </div>
+                <div class="ui-form-item">
+                    @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "ui-label" })
+                    @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "ui-input" })
+                </div>
+                <div class="ui-form-item">
+                    @Html.LabelFor(m => m.ConfirmPassword, htmlAttributes: new { @class = "ui-label" })
+                    @Html.PasswordFor(m => m.ConfirmPassword, htmlAttributes: new { @class = "ui-input" })
+                </div>
+                <div class="ui-form-item">
+                    <div class="ui-button ui-button-lorange">
+                        <input type="submit" value="注册" class="ui-button-text" />
+                    </div>
+                </div>
+            </fieldset>
+        }
+    </div>
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

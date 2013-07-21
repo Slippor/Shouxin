@@ -1,6 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 using ShouxinServer.Common;
+using ShouxinServer.Controllers;
 
 namespace ShouxinServer
 {
@@ -34,15 +35,16 @@ namespace ShouxinServer
         private static void RegisterStyleBundles(BundleCollection bundles)
         {
             bundles.Add(new StyleBundle(StyleConfigs.CommonVirtualPath).Include(
-                "~/Content/Custon/Custom.css",
-                "~/Content/Ali/Alipay-2.3.css"
-                ));
-
-            bundles.Add(new StyleBundle("~/Content/css/Index").Include(
-                ));
-
-            bundles.Add(new StyleBundle("~/Content/css/Register").Include(
                 "~/Content/Ali/alice.common.v1-1.4.css",
+                "~/Content/Ali/Alipay-2.3.css",
+                "~/Content/Custom/Custom.css"
+                ));
+
+            bundles.Add(new StyleBundle(StyleConfigs.HomeIndexCssVirtualPath).Include(
+                ));
+
+            bundles.Add(new StyleBundle(StyleConfigs.RegisterCssVirtualPath).Include(
+                //"~/Content/Ali/alice.common.v1-1.4.css",
                 "~/Content/Ali/memberprod.authreg-1.2.css",
                 "~/Content/Custom/Custom-Register.css"
                 ));

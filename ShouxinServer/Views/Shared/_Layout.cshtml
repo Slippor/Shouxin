@@ -1,4 +1,3 @@
-@using ShouxinServer.Common
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -6,8 +5,18 @@
     <title>@ViewBag.Title</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    @Styles.Render(@Model.CommonCssPath)
-    @Styles.Render(@ViewBag.Css)
+    @if (@Model != null)
+    {
+        @Styles.Render(@Model.CommonCssPath)
+        if (@Model.CustomCssPathes != null)
+        {
+            foreach (var customCssPath in @Model.CustomCssPathes)
+            {
+        @Styles.Render(customCssPath)
+        }
+    }
+    }
+    
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>

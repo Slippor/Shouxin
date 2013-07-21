@@ -2,17 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
+using ShouxinServer.Common;
+using ShouxinServer.ViewModels;
 using WebMatrix.WebData;
 using ShouxinServer.Filters;
 using ShouxinServer.Models;
 
 namespace ShouxinServer.Controllers
 {
+    public class AccountViewModel : BaseViewModel
+    {
+        public override List<string> CustomCssPathes
+        {
+            get
+            {
+                return new List<string>() { StyleConfigs.RegisterCssVirtualPath };
+            }
+            set
+            {
+                base.CustomCssPathes = value;
+            }
+        }
+    }
+
     [Authorize]
     [InitializeSimpleMembership]
     public class AccountController : BaseController
@@ -63,7 +79,8 @@ namespace ShouxinServer.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            var viewModel = new RegisterViewModel();
+            return View(viewModel);
         }
 
         //
@@ -72,7 +89,7 @@ namespace ShouxinServer.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(RegisterModel model)
+        public ActionResult Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
